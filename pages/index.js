@@ -1,47 +1,79 @@
-import React from "react";
+import Link from "next/link";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div style={{background:"#09090b",color:"white",minHeight:"100vh",fontFamily:"Arial",padding:"40px"}}>
-      <h1>LITRADE</h1>
-      <h2>Lithium Trade Brokerage</h2>
+    <Layout>
+      <section className="hero">
+        <div className="container hero-grid">
+          <div>
+            <div className="eyebrow">Broker commerciale B2B</div>
+            <h1>Accesso diretto a forniture affidabili nel settore litio.</h1>
+            <p className="lead">
+              Litrade mette in contatto aziende europee e fornitori cinesi selezionati,
+              facilitando l’interazione commerciale e il coordinamento operativo per celle
+              agli ioni di litio, battery packs e soluzioni energetiche finite.
+            </p>
 
-      <section style={{marginTop:"40px"}}>
-        <h3>Broker commerciale B2B</h3>
-        <p>
-          Collegamento diretto tra aziende europee e fornitori di batterie al litio.
-        </p>
-        <p>
-          Litrade opera come intermediario commerciale facilitando l’incontro tra
-          domanda e offerta attraverso fornitori cinesi affidabili.
-        </p>
+            <div className="actions">
+              <Link href="/servizi" className="btn-primary">Scopri i servizi</Link>
+              <Link href="/contatti" className="btn-secondary">Contatta Litrade</Link>
+            </div>
+          </div>
+
+          <div className="hero-card">
+            <div className="stat">
+              <div className="stat-label">Posizionamento</div>
+              <div className="stat-value">Intermediazione pura e orientata al risultato</div>
+            </div>
+            <div className="stat">
+              <div className="stat-label">Mercato</div>
+              <div className="stat-value">Italia ed Europa</div>
+            </div>
+            <div className="stat">
+              <div className="stat-label">Prodotti trattati</div>
+              <div className="stat-value">LFP, NMC, LMFP, storage, fotovoltaico</div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section style={{marginTop:"40px"}}>
-        <h3>Servizi</h3>
-        <ul>
-          <li>Ricerca fornitori</li>
-          <li>Intermediazione commerciale</li>
-          <li>Coordinamento trasporti</li>
-        </ul>
-      </section>
+      <section className="section">
+        <div className="container">
+          <div className="section-heading">
+            <h2>Un broker che semplifica il rapporto tra cliente e fornitore.</h2>
+            <p>
+              Il valore di Litrade non è la consulenza strategica, ma la capacità di creare
+              connessioni commerciali concrete, affidabili e rapide tra le parti, riducendo attriti
+              nelle fasi di contatto, negoziazione e organizzazione operativa.
+            </p>
+          </div>
 
-      <section style={{marginTop:"40px"}}>
-        <h3>Prodotti</h3>
-        <ul>
-          <li>Celle litio LFP, NMC, LMFP</li>
-          <li>Pacchi batteria</li>
-          <li>Sistemi di accumulo</li>
-          <li>Fotovoltaico e illuminazione solare</li>
-        </ul>
+          <div className="grid-3">
+            <div className="card">
+              <div className="card-number">01</div>
+              <h3>Rete consolidata</h3>
+              <p>
+                Accesso a una rete stabile di fornitori cinesi selezionati nel settore batterie ed energia.
+              </p>
+            </div>
+            <div className="card">
+              <div className="card-number">02</div>
+              <h3>Interazione facilitata</h3>
+              <p>
+                Supporto diretto nello scambio tra aziende e produttori per rendere la trattativa più fluida.
+              </p>
+            </div>
+            <div className="card">
+              <div className="card-number">03</div>
+              <h3>Coordinamento logistico</h3>
+              <p>
+                Supporto nell’organizzazione dei trasporti e nel raccordo operativo con i fornitori.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-
-      <section style={{marginTop:"40px"}}>
-        <h3>Contatti</h3>
-        <p>Email: michelebenini03@gmail.com</p>
-        <p>Telefono: +39 339 697 4518</p>
-        <p>Area: Italia / Europa</p>
-      </section>
-    </div>
+    </Layout>
   );
 }
