@@ -17,7 +17,6 @@ export default function Prodotti() {
 
       <section className="section">
         <div className="container grid-2">
-
           <div className="card">
             <h3>Celle agli ioni di litio</h3>
             <ul className="list">
@@ -36,7 +35,6 @@ export default function Prodotti() {
               <li>Solar street lights</li>
             </ul>
           </div>
-
         </div>
       </section>
     </Layout>
