@@ -7,10 +7,10 @@ export default function NmcPage() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Prodotti · NMC</div>
-          <h1>Celle NMC per applicazioni ad alta densità energetica.</h1>
+          <h1>Celle NMC per applicazioni ad alta densità energetica e ingombro ottimizzato.</h1>
           <p>
-            Le celle Nickel Manganese Cobalt sono generalmente utilizzate in progetti in cui peso,
-            compattezza ed energia specifica assumono particolare importanza, mantenendo un profilo prestazionale elevato.
+            Le celle NMC sono adottate in configurazioni dove densità energetica, compattezza e profilo prestazionale
+            hanno un peso importante nella progettazione del sistema finale.
           </p>
         </div>
       </section>
@@ -18,22 +18,46 @@ export default function NmcPage() {
       <section className="section">
         <div className="container grid-2">
           <div className="card">
-            <h3>Caratteristiche principali</h3>
+            <h3>Profilo tecnico</h3>
             <ul className="list">
-              <li>Maggiore densità energetica rispetto a soluzioni più conservative</li>
-              <li>Buon equilibrio tra prestazione e ingombro</li>
-              <li>Adatte a configurazioni dove volume e peso incidono sul progetto</li>
-              <li>Impiego diffuso in applicazioni power-oriented</li>
+              <li>Tensione nominale tipica: 3.6 V</li>
+              <li>Buon rapporto tra energia specifica e volume disponibile</li>
+              <li>Adatte a configurazioni compatte e ad alta energia</li>
+              <li>Impiego frequente in battery packs prestazionali</li>
             </ul>
           </div>
 
           <div className="card">
+            <h3>Gamma indicativa</h3>
+            <ul className="list">
+              <li>Formati riportati: 18650 e 21700</li>
+              <li>Esempi serie: NCM18650P-2000, NCM18650P-2200, NCM18650-2500, NCM18650-2600</li>
+              <li>Serie 21700 documentata: INR21700-4000, INR21700-4500, INR21700-5000</li>
+              <li>Capacità e configurazioni definite in base a modello e applicazione</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container grid-2">
+          <div className="card">
             <h3>Applicazioni tipiche</h3>
             <ul className="list">
-              <li>Battery packs ad alta energia</li>
-              <li>Mobilità elettrica e sistemi compatti</li>
-              <li>Soluzioni con focus su autonomia o densità</li>
-              <li>Applicazioni professionali con requisiti di performance elevati</li>
+              <li>Battery packs ad alta densità energetica</li>
+              <li>Mobilità elettrica leggera e sistemi compatti</li>
+              <li>Applicazioni con vincoli su peso e volume</li>
+              <li>Progetti che richiedono elevata energia specifica</li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <h3>Conformità disponibile</h3>
+            <ul className="list">
+              <li>REACH Annex XVII</li>
+              <li>RoHS 2011/65/EU e direttiva 2015/863</li>
+              <li>Report materici e immagini campione di laboratorio</li>
+              <li>Supporto documentale per valutazioni B2B</li>
             </ul>
           </div>
         </div>
@@ -41,10 +65,10 @@ export default function NmcPage() {
 
       <section className="section">
         <div className="container band">
-          <h3>Approccio commerciale</h3>
+          <h3>Supporto commerciale</h3>
           <p>
             Litrade supporta l’accesso a celle NMC tramite interlocuzione diretta con fornitori selezionati,
-            facilitando l’allineamento commerciale e logistico necessario alla fornitura.
+            favorendo l’allineamento tecnico-commerciale e logistico necessario alla fornitura.
           </p>
           <div className="actions">
             <Link href="/contatti" className="btn-primary">Richiedi contatto</Link>
