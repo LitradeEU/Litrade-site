@@ -29,7 +29,6 @@ export default function Layout({ children }) {
           <nav className="nav">
             <Link href="/">Home</Link>
             <Link href="/servizi">Servizi</Link>
-            <Link href="/prodotti">Prodotti</Link>    
             <Link href="/contatti">Contatti</Link>
           </nav>
         </div>
