@@ -20,7 +20,6 @@ export default function Home() {
 
             <div className="actions">
               <Link href="/servizi" className="btn-primary">Visualizza servizi</Link>
-              <Link href="/prodotti" className="btn-secondary">Gamma prodotti</Link>  
               <Link href="/contatti" className="btn-secondary">Richiedi contatto</Link>
             </div>
           </div>
