@@ -1,15 +1,51 @@
+import { useState } from "react";
 import Layout from "../components/Layout";
 
 export default function Contatti() {
+  const [form, setForm] = useState({
+    company: "",
+    name: "",
+    email: "",
+    phone: "",
+    interest: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const buildMailto = () => {
+    const subject = encodeURIComponent(`Richiesta contatto sito Litrade - ${form.company || form.name || "Azienda"}`);
+    const body = encodeURIComponent(
+      `Azienda: ${form.company}
+` +
+      `Nome: ${form.name}
+` +
+      `Email: ${form.email}
+` +
+      `Telefono: ${form.phone}
+` +
+      `Interesse: ${form.interest}
+
+` +
+      `Messaggio:
+${form.message}`
+    );
+
+    window.location.href = `mailto:michelebenini03@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <Layout>
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Contatti</div>
-          <h1>Parliamo della tua prossima fornitura.</h1>
+          <h1>Contatto diretto per richieste commerciali e sourcing B2B.</h1>
           <p>
-            Se la tua azienda è alla ricerca di un broker commerciale per celle al litio o soluzioni energetiche,
-            Litrade è disponibile per un primo contatto diretto.
+            Se la tua azienda è interessata a celle agli ioni di litio, battery packs o soluzioni collegate al settore storage,
+            puoi inviare una richiesta compilando il form qui sotto.
           </p>
         </div>
       </section>
@@ -31,14 +67,21 @@ export default function Contatti() {
             </div>
           </div>
 
-          <div className="card">
-            <h3>Approccio</h3>
-            <p>
-              Litrade facilita il contatto tra cliente e fornitore, supportando lo sviluppo della relazione commerciale
-              e il coordinamento dei processi operativi collegati alla fornitura.
-            </p>
+          <div className="card form-card">
+            <h3>Invia una richiesta</h3>
+            <div className="form-grid">
+              <input name="company" placeholder="Azienda" value={form.company} onChange={handleChange} />
+              <input name="name" placeholder="Nome e cognome" value={form.name} onChange={handleChange} />
+              <input name="email" placeholder="Email aziendale" value={form.email} onChange={handleChange} />
+              <input name="phone" placeholder="Telefono" value={form.phone} onChange={handleChange} />
+              <input name="interest" placeholder="Prodotto di interesse" value={form.interest} onChange={handleChange} className="full" />
+              <textarea name="message" placeholder="Descrivi brevemente la richiesta" value={form.message} onChange={handleChange} className="full" rows="6" />
+            </div>
+            <div className="actions">
+              <button type="button" className="btn-primary button-reset" onClick={buildMailto}>Invia via email</button>
+            </div>
             <p className="grid-note">
-              Per richieste commerciali, partnership o approfondimenti sulle categorie prodotto, è possibile contattare direttamente via email o telefono.
+              Il form apre un messaggio email precompilato indirizzato direttamente a Litrade.
             </p>
           </div>
         </div>
