@@ -1,25 +1,68 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
+const certifications = [
+  {
+    code: "ISO",
+    title: "ISO 9001",
+    note: "Sistema qualità per processi industriali strutturati.",
+  },
+  {
+    code: "UN",
+    title: "UN38.3",
+    note: "Test di trasporto batterie al litio per spedizioni internazionali.",
+  },
+  {
+    code: "RE",
+    title: "REACH",
+    note: "Conformità sostanze chimiche per filiere UE.",
+  },
+  {
+    code: "RH",
+    title: "RoHS",
+    note: "Limitazione sostanze pericolose in prodotti elettrici/elettronici.",
+  },
+  {
+    code: "MS",
+    title: "SDS / MSDS",
+    note: "Schede di sicurezza per gestione, stoccaggio e trasporto.",
+  },
+  {
+    code: "CE",
+    title: "CE (prodotti finiti)",
+    note: "Marcatura applicabile a sistemi completi quando richiesta dalla destinazione d'uso.",
+  },
+  {
+    code: "IE",
+    title: "IEC 62133 / IEC 62619",
+    note: "Standard spesso richiesti in ambito industriale e storage B2B.",
+  },
+  {
+    code: "EU",
+    title: "Battery Regulation UE",
+    note: "Supporto documentale per requisiti del Reg. (UE) 2023/1542 su base prodotto.",
+  },
+];
+
 export default function Home() {
   return (
     <Layout>
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <div className="eyebrow">Lithium trade brokerage</div>
-            <h1>Intermediazione commerciale per forniture nel settore batterie al litio.</h1>
+            <div className="eyebrow">Lithium Trade Brokerage</div>
+            <h1>Forniture batterie al litio per aziende in Italia e in Europa.</h1>
             <p className="lead">
-              Litrade supporta aziende in Italia e in Europa nell’accesso a celle agli ioni di litio
-              e prodotti energetici finiti, attraverso una rete consolidata di fornitori cinesi selezionati.
+              Litrade collega buyer B2B europei e produttori cinesi selezionati per celle LFP, NMC e LMFP,
+              con un approccio orientato a continuità di fornitura, documentazione tecnica e gestione operativa.
             </p>
             <p className="hero-sublead">
-              L’attività è focalizzata sulla connessione tra cliente e fornitore, sulla fluidità dell’interazione
-              commerciale e sul coordinamento operativo delle fasi di approvvigionamento e trasporto.
+              Focus su relazioni commerciali stabili, tempi decisionali più rapidi e coordinamento concreto
+              tra team acquisti, qualità e logistica.
             </p>
 
             <div className="actions">
-              <Link href="/servizi" className="btn-primary">Visualizza servizi</Link>
+              <Link href="/prodotti" className="btn-primary">Esplora prodotti</Link>
               <Link href="/contatti" className="btn-secondary">Richiedi contatto</Link>
             </div>
           </div>
@@ -28,26 +71,26 @@ export default function Home() {
             <div className="panel-label">Ambito operativo</div>
 
             <div className="metric">
-              <div className="metric-title">Mercato di riferimento</div>
+              <div className="metric-title">Mercato</div>
               <div className="metric-value">B2B · Italia · Europa</div>
               <div className="metric-note">
-                Attività orientata a rapporti commerciali tra aziende, con interlocuzione diretta con i fornitori.
+                Forniture tra aziende con interlocuzione diretta su aspetti tecnico-commerciali.
               </div>
             </div>
 
             <div className="metric">
-              <div className="metric-title">Tecnologie trattate</div>
+              <div className="metric-title">Tecnologie principali</div>
               <div className="metric-value">LFP · NMC · LMFP</div>
               <div className="metric-note">
-                Celle agli ioni di litio per applicazioni industriali, energetiche e storage.
+                Celle cilindriche per storage, battery packs e applicazioni industriali.
               </div>
             </div>
 
             <div className="metric">
-              <div className="metric-title">Prodotti correlati</div>
-              <div className="metric-value">Battery packs · Storage · PV · Solar lighting</div>
+              <div className="metric-title">Gamma correlata</div>
+              <div className="metric-value">Battery pack · ESS · PV · Solar lighting</div>
               <div className="metric-note">
-                Supporto anche per prodotti finiti collegati al settore energia e accumulo.
+                Supporto anche su prodotti finiti legati ad accumulo ed energia.
               </div>
             </div>
           </div>
@@ -57,35 +100,34 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Una struttura operativa pensata per semplificare il sourcing.</h2>
+            <h2>Processo snello, controllo documentale, comunicazione diretta.</h2>
             <p>
-              Litrade opera come collegamento commerciale tra aziende clienti e produttori,
-              agevolando il flusso informativo e operativo lungo le principali fasi della fornitura.
+              Strutturiamo il sourcing per ridurre attriti tra richiesta tecnica, quotazione, conferma fornitura e spedizione.
             </p>
           </div>
 
           <div className="grid-3">
             <div className="card">
               <div className="card-number">01</div>
-              <h3>Accesso a fornitori selezionati</h3>
+              <h3>Accesso a produttori qualificati</h3>
               <p>
-                Rete consolidata di partner produttivi cinesi nel settore celle al litio e prodotti energetici.
+                Network consolidato nel settore litio con focus su qualità costante e affidabilità industriale.
               </p>
             </div>
 
             <div className="card">
               <div className="card-number">02</div>
-              <h3>Interazione commerciale più fluida</h3>
+              <h3>Allineamento tecnico-commerciale</h3>
               <p>
-                Supporto nella relazione tra le parti per velocizzare contatto, allineamento e avanzamento operativo.
+                Supporto su specifiche, varianti prodotto, documenti richiesti e avanzamento della trattativa.
               </p>
             </div>
 
             <div className="card">
               <div className="card-number">03</div>
-              <h3>Coordinamento della logistica</h3>
+              <h3>Coordinamento operativo</h3>
               <p>
-                Allineamento con i fornitori nelle attività legate a organizzazione dei trasporti e spedizioni.
+                Monitoraggio dei passaggi chiave tra produzione, preparazione spedizione e consegna.
               </p>
             </div>
           </div>
@@ -93,25 +135,47 @@ export default function Home() {
       </section>
 
       <section className="section">
+        <div className="container">
+          <div className="section-heading">
+            <h2>Certificazioni e conformità rilevanti per il mercato europeo.</h2>
+            <p>
+              Documentazione disponibile in funzione di chimica, modello e applicazione finale.
+            </p>
+          </div>
+
+          <div className="cert-grid">
+            {certifications.map((item) => (
+              <article key={item.title} className="cert-card">
+                <div className="cert-badge" aria-hidden="true">{item.code}</div>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.note}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container grid-2">
           <div className="band">
-            <h3>Tecnologie e gamma prodotto</h3>
+            <h3>Schede tecniche per chimica</h3>
             <p>
-              Celle agli ioni di litio LFP, NMC e LMFP, oltre a battery packs, sistemi di accumulo,
-              pannelli fotovoltaici e solar street lights.
+              Ogni pagina prodotto include varianti principali e specifiche di riferimento per una prima valutazione B2B.
             </p>
             <div className="actions">
-              <Link href="/servizi" className="btn-secondary">Approfondisci</Link>
+              <Link href="/prodotti" className="btn-secondary">Vai alle schede</Link>
             </div>
           </div>
 
           <div className="band">
-            <h3>Contatto diretto</h3>
+            <h3>Richieste su progetto</h3>
             <p>
-              Il sito è strutturato per offrire una presentazione chiara dell’attività e facilitare il primo contatto commerciale.
+              Possiamo supportare richieste con target specifici su capacità, corrente, formato e requisiti documentali.
             </p>
             <div className="actions">
-              <Link href="/contatti" className="btn-primary">Vai ai contatti</Link>
+              <Link href="/contatti" className="btn-primary">Parla con Litrade</Link>
             </div>
           </div>
         </div>

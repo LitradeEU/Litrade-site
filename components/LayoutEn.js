@@ -11,12 +11,12 @@ function BoltIcon() {
   );
 }
 
-export default function Layout({ children }) {
+export default function LayoutEn({ children }) {
   return (
     <>
       <header className="header">
         <div className="container header-inner">
-          <Link href="/" className="brand" aria-label="Litrade Home">
+          <Link href="/en" className="brand" aria-label="Litrade Home">
             <div className="logo-mark">
               <BoltIcon />
             </div>
@@ -26,12 +26,12 @@ export default function Layout({ children }) {
             </div>
           </Link>
 
-          <nav className="nav" aria-label="Navigazione principale">
-            <Link href="/">Home</Link>
-            <Link href="/prodotti">Prodotti</Link>
-            <Link href="/servizi">Servizi</Link>
-            <Link href="/contatti">Contatti</Link>
-            <Link href="/en" className="nav-lang">EN</Link>
+          <nav className="nav" aria-label="Main navigation">
+            <Link href="/en">Home</Link>
+            <Link href="/en/products">Products</Link>
+            <Link href="/en/services">Services</Link>
+            <Link href="/en/contact">Contact</Link>
+            <Link href="/" className="nav-lang">IT</Link>
           </nav>
         </div>
       </header>
@@ -42,7 +42,7 @@ export default function Layout({ children }) {
         <div className="container footer-inner">
           <div>© 2026 Litrade</div>
           <div className="footer-note">
-            Intermediazione commerciale B2B per celle al litio e soluzioni energetiche in Italia ed Europa.
+            B2B trade brokerage for lithium cells and energy solutions across Italy and Europe.
           </div>
         </div>
       </footer>

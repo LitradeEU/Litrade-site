@@ -1,16 +1,71 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
 
+const lmfpVariants = [
+  {
+    model: "LMFP33140",
+    format: "33140 cilindrica",
+    nominalVoltage: "3.7 V",
+    capacity: "15,000 mAh",
+    energy: "55.50 Wh",
+    chargeCurrent: "15 A (≤1C)",
+    dischargeCurrent: "45 A (≤3C)",
+  },
+];
+
 export default function LmfpPage() {
   return (
     <Layout>
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Prodotti · LMFP</div>
-          <h1>Celle LMFP per progetti che richiedono stabilità fosfato e miglioramento energetico.</h1>
+          <h1>Celle LMFP per bilanciare stabilità fosfato e maggiore energia.</h1>
           <p>
-            Le celle LMFP rappresentano una tecnologia di interesse per applicazioni in cui si ricerca un equilibrio
-            tra profilo di sicurezza tipico delle chimiche fosfato e incremento prestazionale rispetto alla LFP tradizionale.
+            La tecnologia LMFP è adatta a progetti che cercano un profilo evoluto rispetto alla LFP standard,
+            mantenendo un approccio robusto per impieghi storage e industriali.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-heading">
+            <h2>Scheda tecnica variante disponibile</h2>
+            <p>Dati di riferimento raccolti da linee prodotto industriali qualificate.</p>
+          </div>
+
+          <div className="table-wrap">
+            <table className="spec-table">
+              <thead>
+                <tr>
+                  <th>Modello</th>
+                  <th>Formato</th>
+                  <th>Tensione nominale</th>
+                  <th>Capacità nominale</th>
+                  <th>Energia nominale</th>
+                  <th>Corrente carica max</th>
+                  <th>Corrente scarica max</th>
+                </tr>
+              </thead>
+              <tbody>
+                {lmfpVariants.map((item) => (
+                  <tr key={item.model}>
+                    <td>{item.model}</td>
+                    <td>{item.format}</td>
+                    <td>{item.nominalVoltage}</td>
+                    <td>{item.capacity}</td>
+                    <td>{item.energy}</td>
+                    <td>{item.chargeCurrent}</td>
+                    <td>{item.dischargeCurrent}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="tech-note">
+            Nota: la linea LMFP è tipicamente gestita su richiesta progetto; disponibilità e lead time vanno verificati
+            in fase di allineamento commerciale.
           </p>
         </div>
       </section>
@@ -18,46 +73,22 @@ export default function LmfpPage() {
       <section className="section">
         <div className="container grid-2">
           <div className="card">
-            <h3>Profilo tecnico</h3>
+            <h3>Quando valutare LMFP</h3>
             <ul className="list">
-              <li>Chimica orientata a bilanciare sicurezza e resa energetica</li>
-              <li>Interesse crescente per storage evoluto e battery packs di nuova generazione</li>
-              <li>Adatta a progetti che ricercano un upgrade rispetto a LFP standard</li>
-              <li>Possibile impiego in formati cilindrici ad alta capacità</li>
-            </ul>
-          </div>
-
-          <div className="card">
-            <h3>Gamma indicativa</h3>
-            <ul className="list">
-              <li>Il sito Xiaolu mostra una linea LMFP 33140</li>
-              <li>Applicabile a scenari storage e sistemi energetici evoluti</li>
-              <li>Utilizzabile in configurazioni dedicate su base progetto</li>
-              <li>Disponibilità e specifiche da confermare in funzione del modello richiesto</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container grid-2">
-          <div className="card">
-            <h3>Applicazioni tipiche</h3>
-            <ul className="list">
-              <li>Sistemi di accumulo con requisiti evoluti</li>
-              <li>Battery packs di nuova generazione</li>
-              <li>Progetti che richiedono bilanciamento tra stabilità e densità</li>
-              <li>Soluzioni in cui il criterio tecnico prevale sulla standardizzazione di massa</li>
+              <li>Upgrade energetico rispetto a configurazioni LFP tradizionali</li>
+              <li>Applicazioni storage evolute con target tecnici specifici</li>
+              <li>Progetti dove sicurezza e performance devono coesistere</li>
+              <li>Programmi pilota e industrializzazione su volumi progressivi</li>
             </ul>
           </div>
 
           <div className="card">
             <h3>Approccio di fornitura</h3>
             <ul className="list">
-              <li>Verifica disponibilità con il produttore in funzione del progetto</li>
-              <li>Allineamento tecnico-commerciale preliminare</li>
-              <li>Supporto documentale e logistico a valle del contatto</li>
-              <li>Gestione B2B orientata a richiesta specifica</li>
+              <li>Verifica disponibilità e roadmap su base progetto</li>
+              <li>Allineamento tecnico-commerciale pre-ordine</li>
+              <li>Raccolta documentale in base al mercato di destinazione</li>
+              <li>Supporto operativo su logistica e spedizione internazionale</li>
             </ul>
           </div>
         </div>
@@ -65,13 +96,12 @@ export default function LmfpPage() {
 
       <section className="section">
         <div className="container band">
-          <h3>Supporto commerciale</h3>
+          <h3>Richieste LMFP su progetto</h3>
           <p>
-            Litrade facilita il contatto con fornitori in grado di offrire soluzioni LMFP,
-            supportando lo sviluppo dell’interazione commerciale e l’organizzazione operativa della fornitura.
+            Ti supportiamo nella qualifica preliminare della chimica LMFP in base a requisiti tecnici e commerciali.
           </p>
           <div className="actions">
-            <Link href="/contatti" className="btn-primary">Richiedi contatto</Link>
+            <Link href="/contatti" className="btn-primary">Richiedi quotazione</Link>
             <Link href="/prodotti" className="btn-secondary">Torna ai prodotti</Link>
           </div>
         </div>

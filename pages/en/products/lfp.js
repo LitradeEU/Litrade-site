@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Layout from "../../components/Layout";
+import LayoutEn from "../../../components/LayoutEn";
 
 const lfpVariants = [
   {
     model: "LFP32140-12500",
-    format: "32140 cilindrica",
+    format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "12,500 mAh",
     energy: "40.00 Wh",
@@ -13,7 +13,7 @@ const lfpVariants = [
   },
   {
     model: "LFP32140-15000",
-    format: "32140 cilindrica",
+    format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     energy: "48.00 Wh",
@@ -22,7 +22,7 @@ const lfpVariants = [
   },
   {
     model: "LFP32140-17500",
-    format: "32140 cilindrica",
+    format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "17,500 mAh",
     energy: "56.00 Wh",
@@ -31,7 +31,7 @@ const lfpVariants = [
   },
   {
     model: "LFP26700-4000",
-    format: "26700 cilindrica",
+    format: "26700 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "4,000 mAh",
     energy: "12.80 Wh",
@@ -40,16 +40,16 @@ const lfpVariants = [
   },
 ];
 
-export default function LfpPage() {
+export default function LfpPageEn() {
   return (
-    <Layout>
+    <LayoutEn>
       <section className="page-hero">
         <div className="container">
-          <div className="eyebrow">Prodotti · LFP</div>
-          <h1>Celle LFP per massima sicurezza operativa e lunga vita ciclica.</h1>
+          <div className="eyebrow">Products · LFP</div>
+          <h1>LFP cells for high safety margins and long cycle life.</h1>
           <p>
-            Chimica consigliata per storage stazionario, applicazioni industriali e sistemi dove stabilità termica
-            e affidabilità nel tempo sono prioritarie.
+            Recommended chemistry for stationary ESS, industrial packs, and projects where thermal stability and
+            operational durability are critical.
           </p>
         </div>
       </section>
@@ -57,21 +57,21 @@ export default function LfpPage() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Scheda tecnica varianti principali</h2>
-            <p>Dati di riferimento raccolti da linee prodotto industriali qualificate.</p>
+            <h2>Main technical variants</h2>
+            <p>Reference values from qualified industrial product lines.</p>
           </div>
 
           <div className="table-wrap">
             <table className="spec-table">
               <thead>
                 <tr>
-                  <th>Modello</th>
-                  <th>Formato</th>
-                  <th>Tensione nominale</th>
-                  <th>Capacità nominale</th>
-                  <th>Energia nominale</th>
-                  <th>Corrente carica max</th>
-                  <th>Corrente scarica max</th>
+                  <th>Model</th>
+                  <th>Format</th>
+                  <th>Nominal voltage</th>
+                  <th>Nominal capacity</th>
+                  <th>Nominal energy</th>
+                  <th>Max charge current</th>
+                  <th>Max discharge current</th>
                 </tr>
               </thead>
               <tbody>
@@ -91,8 +91,8 @@ export default function LfpPage() {
           </div>
 
           <p className="tech-note">
-            Nota: disponibilità, curve complete, temperatura operativa e dimensioni finali vanno confermate in offerta
-            in base al lotto e all'applicazione.
+            Note: final availability, complete discharge curves, operating temperature, and final dimensions should be
+            confirmed at quotation stage.
           </p>
         </div>
       </section>
@@ -100,22 +100,22 @@ export default function LfpPage() {
       <section className="section">
         <div className="container grid-2">
           <div className="card">
-            <h3>Applicazioni B2B tipiche</h3>
+            <h3>Typical B2B applications</h3>
             <ul className="list">
-              <li>Energy storage systems (C&I, backup, peak shaving)</li>
-              <li>Battery packs industriali ad alta vita ciclica</li>
-              <li>Integrazione con impianti fotovoltaici</li>
-              <li>Sistemi stazionari con forte attenzione a sicurezza e stabilità</li>
+              <li>Commercial and industrial ESS</li>
+              <li>Industrial battery packs with long cycle targets</li>
+              <li>PV-coupled storage systems</li>
+              <li>Stationary systems with strict safety requirements</li>
             </ul>
           </div>
 
           <div className="card">
-            <h3>Conformità e documenti</h3>
+            <h3>Compliance and docs</h3>
             <ul className="list">
-              <li>UN38.3 e SDS/MSDS per trasporto e handling</li>
-              <li>REACH e RoHS per conformità materica UE</li>
-              <li>Test report e documenti qualità su richiesta</li>
-              <li>Supporto per dossier tecnico-commerciale pre-ordine</li>
+              <li>UN38.3 and SDS/MSDS for transport and handling</li>
+              <li>REACH and RoHS for EU material compliance</li>
+              <li>Test reports and quality documents on request</li>
+              <li>Support for pre-order technical-commercial files</li>
             </ul>
           </div>
         </div>
@@ -123,16 +123,14 @@ export default function LfpPage() {
 
       <section className="section">
         <div className="container band">
-          <h3>Richieste LFP su specifica</h3>
-          <p>
-            Gestiamo richieste per voltaggio, capacità, corrente e target documentale con interlocuzione tecnica diretta.
-          </p>
+          <h3>LFP requests by specification</h3>
+          <p>We handle requests by voltage, capacity, current profile, and destination documentation package.</p>
           <div className="actions">
-            <Link href="/contatti" className="btn-primary">Richiedi quotazione</Link>
-            <Link href="/prodotti" className="btn-secondary">Torna ai prodotti</Link>
+            <Link href="/en/contact" className="btn-primary">Request quotation</Link>
+            <Link href="/en/products" className="btn-secondary">Back to products</Link>
           </div>
         </div>
       </section>
-    </Layout>
+    </LayoutEn>
   );
 }

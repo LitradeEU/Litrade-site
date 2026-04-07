@@ -17,21 +17,14 @@ export default function Contatti() {
   };
 
   const buildMailto = () => {
-    const subject = encodeURIComponent(`Richiesta contatto sito Litrade - ${form.company || form.name || "Azienda"}`);
+    const subject = encodeURIComponent(`Richiesta contatto Litrade - ${form.company || form.name || "Azienda"}`);
     const body = encodeURIComponent(
-      `Azienda: ${form.company}
-` +
-      `Nome: ${form.name}
-` +
-      `Email: ${form.email}
-` +
-      `Telefono: ${form.phone}
-` +
-      `Interesse: ${form.interest}
-
-` +
-      `Messaggio:
-${form.message}`
+      `Azienda: ${form.company}\n` +
+      `Nome: ${form.name}\n` +
+      `Email: ${form.email}\n` +
+      `Telefono: ${form.phone}\n` +
+      `Interesse: ${form.interest}\n\n` +
+      `Messaggio:\n${form.message}`
     );
 
     window.location.href = `mailto:michelebenini03@gmail.com?subject=${subject}&body=${body}`;
@@ -42,10 +35,10 @@ ${form.message}`
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Contatti</div>
-          <h1>Contatto diretto per richieste commerciali e sourcing B2B.</h1>
+          <h1>Contatto diretto per richieste commerciali B2B.</h1>
           <p>
-            Se la tua azienda è interessata a celle agli ioni di litio, battery packs o soluzioni collegate al settore storage,
-            puoi inviare una richiesta compilando il form qui sotto.
+            Inviaci il tuo fabbisogno tecnico e commerciale: prepariamo un primo inquadramento prodotto/documentale
+            per il mercato italiano ed europeo.
           </p>
         </div>
       </section>
@@ -74,14 +67,14 @@ ${form.message}`
               <input name="name" placeholder="Nome e cognome" value={form.name} onChange={handleChange} />
               <input name="email" placeholder="Email aziendale" value={form.email} onChange={handleChange} />
               <input name="phone" placeholder="Telefono" value={form.phone} onChange={handleChange} />
-              <input name="interest" placeholder="Prodotto di interesse" value={form.interest} onChange={handleChange} className="full" />
-              <textarea name="message" placeholder="Descrivi brevemente la richiesta" value={form.message} onChange={handleChange} className="full" rows="6" />
+              <input name="interest" placeholder="Chimica / modello di interesse" value={form.interest} onChange={handleChange} className="full" />
+              <textarea name="message" placeholder="Quantità, requisiti tecnici, tempistiche, destinazione" value={form.message} onChange={handleChange} className="full" rows="6" />
             </div>
             <div className="actions">
               <button type="button" className="btn-primary button-reset" onClick={buildMailto}>Invia via email</button>
             </div>
             <p className="grid-note">
-              Il form apre un messaggio email precompilato indirizzato direttamente a Litrade.
+              Il form apre il client email con un messaggio precompilato.
             </p>
           </div>
         </div>

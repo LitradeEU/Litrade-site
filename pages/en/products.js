@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Layout from "../components/Layout";
+import LayoutEn from "../../components/LayoutEn";
 
 function ProductVisual({ type = "cell" }) {
   if (type === "storage") {
@@ -25,16 +25,16 @@ function ProductVisual({ type = "cell" }) {
   );
 }
 
-export default function Prodotti() {
+export default function ProductsEn() {
   return (
-    <Layout>
+    <LayoutEn>
       <section className="page-hero">
         <div className="container">
-          <div className="eyebrow">Prodotti</div>
-          <h1>Celle litio e soluzioni energia per progetti B2B in Italia ed Europa.</h1>
+          <div className="eyebrow">Products</div>
+          <h1>Lithium cells and energy solutions for industrial B2B programs.</h1>
           <p>
-            Selezioniamo tecnologie e varianti con criteri industriali chiari: specifica tecnica, conformità documentale,
-            affidabilità di fornitura e coerenza con l'applicazione finale.
+            We support chemistry and model selection based on technical fit, documentation requirements, and
+            commercial execution goals.
           </p>
         </div>
       </section>
@@ -45,14 +45,14 @@ export default function Prodotti() {
             <div className="product-visual">
               <ProductVisual type="cell" />
             </div>
-            <h3>Celle agli ioni di litio</h3>
+            <h3>Lithium-ion cells</h3>
             <p>
-              Schede tecniche dedicate per LFP, NMC e LMFP con varianti principali e parametri chiave per valutazioni rapide.
+              Dedicated technical pages for LFP, NMC, and LMFP with key variants and critical performance metrics.
             </p>
             <ul className="list">
-              <li><Link href="/prodotti/lfp">LFP (LiFePO4)</Link></li>
-              <li><Link href="/prodotti/nmc">NMC</Link></li>
-              <li><Link href="/prodotti/lmfp">LMFP</Link></li>
+              <li><Link href="/en/products/lfp">LFP (LiFePO4)</Link></li>
+              <li><Link href="/en/products/nmc">NMC</Link></li>
+              <li><Link href="/en/products/lmfp">LMFP</Link></li>
             </ul>
           </div>
 
@@ -60,14 +60,14 @@ export default function Prodotti() {
             <div className="product-visual">
               <ProductVisual type="storage" />
             </div>
-            <h3>Prodotti finiti</h3>
+            <h3>Finished products</h3>
             <p>
-              Disponibilità anche per soluzioni complete correlate al mondo storage ed energia, su richiesta progetto.
+              Availability also includes finished systems related to storage and distributed energy applications.
             </p>
             <ul className="list">
               <li>Battery packs</li>
-              <li>Sistemi di accumulo (ESS)</li>
-              <li>Pannelli fotovoltaici</li>
+              <li>Energy storage systems (ESS)</li>
+              <li>Photovoltaic panels</li>
               <li>Solar street lights</li>
             </ul>
           </div>
@@ -78,29 +78,23 @@ export default function Prodotti() {
         <div className="container grid-3">
           <div className="card">
             <div className="card-number">01</div>
-            <h3>Range formati</h3>
-            <p>
-              Famiglie cilindriche 18650, 21700, 26700, 32140, 32700 e 33140 in funzione della chimica.
-            </p>
+            <h3>Form factor range</h3>
+            <p>Cylindrical families include 18650, 21700, 26700, 32140, 32700, and 33140 by chemistry.</p>
           </div>
 
           <div className="card">
             <div className="card-number">02</div>
-            <h3>Pacchetto documentale</h3>
-            <p>
-              UN38.3, SDS/MSDS, RoHS, REACH e altra documentazione tecnica secondo modello e destinazione.
-            </p>
+            <h3>Documentation package</h3>
+            <p>UN38.3, SDS/MSDS, RoHS, REACH, and additional technical documentation by destination market.</p>
           </div>
 
           <div className="card">
             <div className="card-number">03</div>
-            <h3>Metodo operativo</h3>
-            <p>
-              Qualifica rapida della richiesta, confronto varianti e coordinamento commerciale fino alla spedizione.
-            </p>
+            <h3>Execution model</h3>
+            <p>Fast requirement screening, model comparison, and supplier-side coordination through shipment.</p>
           </div>
         </div>
       </section>
-    </Layout>
+    </LayoutEn>
   );
 }

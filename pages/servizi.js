@@ -6,10 +6,10 @@ export default function Servizi() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Servizi</div>
-          <h1>Supporto operativo per il sourcing nel settore batterie al litio.</h1>
+          <h1>Supporto commerciale e operativo per il sourcing batterie al litio.</h1>
           <p>
-            Litrade opera come intermediario commerciale tra aziende europee e fornitori cinesi,
-            facilitando le fasi di contatto, allineamento e gestione operativa delle forniture.
+            Operiamo come interfaccia B2B tra aziende europee e produttori cinesi selezionati,
+            con metodo orientato a precisione tecnica, tempi chiari e continuità di fornitura.
           </p>
         </div>
       </section>
@@ -18,25 +18,25 @@ export default function Servizi() {
         <div className="container grid-3">
           <div className="card">
             <div className="card-number">01</div>
-            <h3>Accesso a fornitori selezionati</h3>
+            <h3>Vendor scouting qualificato</h3>
             <p>
-              Collegamento diretto con produttori cinesi affidabili nel settore celle al litio e sistemi energetici.
+              Accesso a produttori affidabili per celle e soluzioni energia con verifica preliminare della compatibilità.
             </p>
           </div>
 
           <div className="card">
             <div className="card-number">02</div>
-            <h3>Intermediazione commerciale</h3>
+            <h3>Allineamento tecnico-commerciale</h3>
             <p>
-              Gestione della comunicazione tra cliente e fornitore per rendere più efficiente il processo commerciale.
+              Supporto su varianti prodotto, documentazione e negoziazione per accelerare le decisioni d'acquisto.
             </p>
           </div>
 
           <div className="card">
             <div className="card-number">03</div>
-            <h3>Coordinamento operativo</h3>
+            <h3>Coordinamento fornitura</h3>
             <p>
-              Supporto nelle attività legate a logistica, trasporto e allineamento con i fornitori.
+              Gestione dei passaggi operativi con i partner industriali fino a spedizione e consegna della commessa.
             </p>
           </div>
         </div>

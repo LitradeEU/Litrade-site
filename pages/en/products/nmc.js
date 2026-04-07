@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Layout from "../../components/Layout";
+import LayoutEn from "../../../components/LayoutEn";
 
 const nmcVariants = [
   {
     model: "NCM18650-2000BG",
-    format: "18650 cilindrica",
+    format: "18650 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "2,000 mAh",
     energy: "7.40 Wh",
@@ -13,7 +13,7 @@ const nmcVariants = [
   },
   {
     model: "NCM18650-2000BD",
-    format: "18650 cilindrica",
+    format: "18650 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "2,000 mAh",
     energy: "7.40 Wh",
@@ -22,7 +22,7 @@ const nmcVariants = [
   },
   {
     model: "NCM18650-2500DC",
-    format: "18650 cilindrica",
+    format: "18650 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "2,500 mAh",
     energy: "9.25 Wh",
@@ -31,7 +31,7 @@ const nmcVariants = [
   },
   {
     model: "NCM18650-2600EA",
-    format: "18650 cilindrica",
+    format: "18650 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "2,600 mAh",
     energy: "9.62 Wh",
@@ -40,7 +40,7 @@ const nmcVariants = [
   },
   {
     model: "INR21700-4000",
-    format: "21700 cilindrica",
+    format: "21700 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "4,000 mAh",
     energy: "14.80 Wh",
@@ -49,16 +49,16 @@ const nmcVariants = [
   },
   {
     model: "INR21700-4500",
-    format: "21700 cilindrica",
+    format: "21700 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "4,500 mAh",
     energy: "16.65 Wh",
-    chargeCurrent: "Da confermare",
-    dischargeCurrent: "Da confermare",
+    chargeCurrent: "To be confirmed",
+    dischargeCurrent: "To be confirmed",
   },
   {
     model: "INR21700-5000",
-    format: "21700 cilindrica",
+    format: "21700 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "5,000 mAh",
     energy: "18.50 Wh",
@@ -67,7 +67,7 @@ const nmcVariants = [
   },
   {
     model: "NCM26700-5000",
-    format: "26700 cilindrica",
+    format: "26700 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "5,000 mAh",
     energy: "18.50 Wh",
@@ -76,7 +76,7 @@ const nmcVariants = [
   },
   {
     model: "NCM32140-18000",
-    format: "32140 cilindrica",
+    format: "32140 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "18,000 mAh",
     energy: "66.60 Wh",
@@ -85,16 +85,16 @@ const nmcVariants = [
   },
 ];
 
-export default function NmcPage() {
+export default function NmcPageEn() {
   return (
-    <Layout>
+    <LayoutEn>
       <section className="page-hero">
         <div className="container">
-          <div className="eyebrow">Prodotti · NMC</div>
-          <h1>Celle NMC per alta densità energetica e ingombri contenuti.</h1>
+          <div className="eyebrow">Products · NMC</div>
+          <h1>NMC cells for high energy density and compact footprint.</h1>
           <p>
-            Tecnologia indicata per sistemi in cui energia specifica, compattezza e performance sono fattori
-            progettuali prioritari.
+            Suitable for projects where specific energy, packaging efficiency, and performance are primary design
+            constraints.
           </p>
         </div>
       </section>
@@ -102,21 +102,21 @@ export default function NmcPage() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Scheda tecnica varianti principali</h2>
-            <p>Dati di riferimento raccolti da linee prodotto industriali qualificate.</p>
+            <h2>Main technical variants</h2>
+            <p>Reference values from qualified industrial product lines.</p>
           </div>
 
           <div className="table-wrap">
             <table className="spec-table">
               <thead>
                 <tr>
-                  <th>Modello</th>
-                  <th>Formato</th>
-                  <th>Tensione nominale</th>
-                  <th>Capacità nominale</th>
-                  <th>Energia nominale</th>
-                  <th>Corrente carica max</th>
-                  <th>Corrente scarica max</th>
+                  <th>Model</th>
+                  <th>Format</th>
+                  <th>Nominal voltage</th>
+                  <th>Nominal capacity</th>
+                  <th>Nominal energy</th>
+                  <th>Max charge current</th>
+                  <th>Max discharge current</th>
                 </tr>
               </thead>
               <tbody>
@@ -136,8 +136,8 @@ export default function NmcPage() {
           </div>
 
           <p className="tech-note">
-            Nota: per selezione finale vanno verificati anche curva di scarica, resistenza interna, temperatura e vincoli
-            del battery management system previsto.
+            Note: final selection should also include discharge curves, internal resistance, operating temperature,
+            and BMS integration constraints.
           </p>
         </div>
       </section>
@@ -145,22 +145,22 @@ export default function NmcPage() {
       <section className="section">
         <div className="container grid-2">
           <div className="card">
-            <h3>Applicazioni B2B tipiche</h3>
+            <h3>Typical B2B applications</h3>
             <ul className="list">
-              <li>Battery packs ad alta densità energetica</li>
-              <li>Micromobilità e sistemi compatti</li>
-              <li>Progetti con vincoli di volume e peso</li>
-              <li>Soluzioni ad elevata energia specifica</li>
+              <li>High-energy battery packs</li>
+              <li>Light mobility and compact systems</li>
+              <li>Projects with strict weight/volume limits</li>
+              <li>Use cases prioritizing energy density</li>
             </ul>
           </div>
 
           <div className="card">
-            <h3>Conformità e documenti</h3>
+            <h3>Compliance and docs</h3>
             <ul className="list">
-              <li>UN38.3, SDS/MSDS e documentazione trasporto</li>
-              <li>RoHS e REACH per mercato UE</li>
-              <li>Schede tecniche e report materici su richiesta</li>
-              <li>Supporto a qualifica tecnica in fase pre-acquisto</li>
+              <li>UN38.3, SDS/MSDS, and transport documentation</li>
+              <li>RoHS and REACH for EU market compliance</li>
+              <li>Technical sheets and material reports on request</li>
+              <li>Support for technical qualification before purchase</li>
             </ul>
           </div>
         </div>
@@ -168,16 +168,14 @@ export default function NmcPage() {
 
       <section className="section">
         <div className="container band">
-          <h3>Richieste NMC su progetto</h3>
-          <p>
-            Possiamo filtrare rapidamente i modelli in base a energia target, correnti richieste e profilo documentale.
-          </p>
+          <h3>NMC requests by project target</h3>
+          <p>We can quickly filter models by energy target, current profile, and required compliance package.</p>
           <div className="actions">
-            <Link href="/contatti" className="btn-primary">Richiedi quotazione</Link>
-            <Link href="/prodotti" className="btn-secondary">Torna ai prodotti</Link>
+            <Link href="/en/contact" className="btn-primary">Request quotation</Link>
+            <Link href="/en/products" className="btn-secondary">Back to products</Link>
           </div>
         </div>
       </section>
-    </Layout>
+    </LayoutEn>
   );
 }
