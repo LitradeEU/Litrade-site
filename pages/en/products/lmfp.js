@@ -3,13 +3,28 @@ import LayoutEn from "../../../components/LayoutEn";
 
 const lmfpVariants = [
   {
-    model: "LMFP33140",
-    format: "33140 cylindrical",
+    model: "LMFP32140-12500MA",
+    format: "32140 cylindrical",
+    nominalVoltage: "3.7 V",
+    capacity: "12,500 mAh",
+    maxDischargeRate: "3C",
+    cycleLife: ">=1500 cycles (0.5C/1C)",
+  },
+  {
+    model: "LMFP32140-15000NA",
+    format: "32140 cylindrical",
     nominalVoltage: "3.7 V",
     capacity: "15,000 mAh",
-    energy: "55.50 Wh",
-    chargeCurrent: "15 A (≤1C)",
-    dischargeCurrent: "45 A (≤3C)",
+    maxDischargeRate: "3C",
+    cycleLife: ">=1500 cycles (0.5C/1C)",
+  },
+  {
+    model: "LMFP32140-15000NB",
+    format: "32140 cylindrical",
+    nominalVoltage: "3.7 V",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "3C",
+    cycleLife: ">=1000 cycles (0.5C/1C)",
   },
 ];
 
@@ -19,10 +34,10 @@ export default function LmfpPageEn() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Products · LMFP</div>
-          <h1>LMFP cells balancing phosphate stability and higher energy output.</h1>
+          <h1>Cylindrical 32140 LMFP cells balancing stability and higher energy output.</h1>
           <p>
-            LMFP is suitable for projects seeking an energy upgrade over standard LFP while preserving robust
-            safety-oriented behavior for industrial and ESS use.
+            The available LMFP line is in cylindrical 32140 format, designed for projects that need
+            energy improvement while retaining robust safety behavior.
           </p>
         </div>
       </section>
@@ -30,8 +45,8 @@ export default function LmfpPageEn() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Available technical variant</h2>
-            <p>Reference values from qualified industrial product lines.</p>
+            <h2>LMFP technical variants</h2>
+            <p>Values aligned with the official product brochure you shared.</p>
           </div>
 
           <div className="table-wrap">
@@ -40,11 +55,10 @@ export default function LmfpPageEn() {
                 <tr>
                   <th>Model</th>
                   <th>Format</th>
-                  <th>Nominal voltage</th>
-                  <th>Nominal capacity</th>
-                  <th>Nominal energy</th>
-                  <th>Max charge current</th>
-                  <th>Max discharge current</th>
+                  <th>Voltage</th>
+                  <th>Capacity</th>
+                  <th>Max discharge rate</th>
+                  <th>Cycle life</th>
                 </tr>
               </thead>
               <tbody>
@@ -54,19 +68,15 @@ export default function LmfpPageEn() {
                     <td>{item.format}</td>
                     <td>{item.nominalVoltage}</td>
                     <td>{item.capacity}</td>
-                    <td>{item.energy}</td>
-                    <td>{item.chargeCurrent}</td>
-                    <td>{item.dischargeCurrent}</td>
+                    <td>{item.maxDischargeRate}</td>
+                    <td>{item.cycleLife}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <p className="tech-note">
-            Note: LMFP programs are typically handled on project demand; availability and lead time should be aligned
-            during commercial qualification.
-          </p>
+          <p className="tech-note">Shown values are intentionally high-level for first-pass B2B screening; detailed specifications are provided during quotation.</p>
         </div>
       </section>
 
@@ -76,8 +86,8 @@ export default function LmfpPageEn() {
             <h3>When to consider LMFP</h3>
             <ul className="list">
               <li>Energy upgrade over conventional LFP setups</li>
-              <li>Advanced storage projects with specific technical targets</li>
-              <li>Applications requiring safety-performance balance</li>
+              <li>Advanced ESS projects with specific requirements</li>
+              <li>Applications needing safety-performance balance</li>
               <li>Pilot-to-scale industrialization programs</li>
             </ul>
           </div>
@@ -97,7 +107,7 @@ export default function LmfpPageEn() {
       <section className="section">
         <div className="container band">
           <h3>LMFP requests by project</h3>
-          <p>We support early LMFP qualification based on your technical and commercial objectives.</p>
+          <p>We support LMFP qualification based on technical targets, cycle-life, and application profile.</p>
           <div className="actions">
             <Link href="/en/contact" className="btn-primary">Request quotation</Link>
             <Link href="/en/products" className="btn-secondary">Back to products</Link>

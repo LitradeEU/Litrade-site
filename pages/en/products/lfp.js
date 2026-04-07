@@ -3,40 +3,52 @@ import LayoutEn from "../../../components/LayoutEn";
 
 const lfpVariants = [
   {
-    model: "LFP32140-12500",
-    format: "32140 cylindrical",
+    model: "LFP18650-2000BA",
+    format: "18650 cylindrical",
     nominalVoltage: "3.2 V",
-    capacity: "12,500 mAh",
-    energy: "40.00 Wh",
-    chargeCurrent: "12.5 A (≤1C)",
-    dischargeCurrent: "25 A (≤2C)",
+    capacity: "2,000 mAh",
+    maxDischargeRate: "3C",
+    cycleLife: ">=1500 cycles (0.5C/1C)",
   },
   {
-    model: "LFP32140-15000",
+    model: "LFP32140-15000LA",
     format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
-    energy: "48.00 Wh",
-    chargeCurrent: "15 A (≤1C)",
-    dischargeCurrent: "30 A (≤2C)",
+    maxDischargeRate: "3C",
+    cycleLife: ">=1000 cycles (1.2C/2C)",
   },
   {
-    model: "LFP32140-17500",
+    model: "LFP32140-15000LB",
     format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
-    capacity: "17,500 mAh",
-    energy: "56.00 Wh",
-    chargeCurrent: "17.5 A (≤1C)",
-    dischargeCurrent: "35 A (≤2C)",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "2C",
+    cycleLife: ">=500 cycles (1C/2C)",
   },
   {
-    model: "LFP26700-4000",
-    format: "26700 cylindrical",
+    model: "LFP32140-15000LC",
+    format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
-    capacity: "4,000 mAh",
-    energy: "12.80 Wh",
-    chargeCurrent: "4 A (≤1C)",
-    dischargeCurrent: "12 A (≤3C)",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "2C",
+    cycleLife: ">=1000 cycles (0.5C/1.5C)",
+  },
+  {
+    model: "LFP32140-15000LD",
+    format: "32140 cylindrical",
+    nominalVoltage: "3.2 V",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "1.5C",
+    cycleLife: ">=1500 cycles (0.5C/1C)",
+  },
+  {
+    model: "LFP32140-15000LL",
+    format: "32140 cylindrical",
+    nominalVoltage: "3.2 V",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "5C",
+    cycleLife: ">=1000 cycles (2C/3C)",
   },
 ];
 
@@ -46,10 +58,10 @@ export default function LfpPageEn() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Products · LFP</div>
-          <h1>LFP cells for high safety margins and long cycle life.</h1>
+          <h1>Cylindrical 18650 and 32140 LFP cells for safety and long cycle life.</h1>
           <p>
-            Recommended chemistry for stationary ESS, industrial packs, and projects where thermal stability and
-            operational durability are critical.
+            The LFP lineup includes standard and high-rate variants designed for thermal stability,
+            durable cycling performance, and storage integration.
           </p>
         </div>
       </section>
@@ -57,8 +69,8 @@ export default function LfpPageEn() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Main technical variants</h2>
-            <p>Reference values from qualified industrial product lines.</p>
+            <h2>LFP technical variants</h2>
+            <p>Values aligned with the official product brochure you shared.</p>
           </div>
 
           <div className="table-wrap">
@@ -67,11 +79,10 @@ export default function LfpPageEn() {
                 <tr>
                   <th>Model</th>
                   <th>Format</th>
-                  <th>Nominal voltage</th>
-                  <th>Nominal capacity</th>
-                  <th>Nominal energy</th>
-                  <th>Max charge current</th>
-                  <th>Max discharge current</th>
+                  <th>Voltage</th>
+                  <th>Capacity</th>
+                  <th>Max discharge rate</th>
+                  <th>Cycle life</th>
                 </tr>
               </thead>
               <tbody>
@@ -81,9 +92,8 @@ export default function LfpPageEn() {
                     <td>{item.format}</td>
                     <td>{item.nominalVoltage}</td>
                     <td>{item.capacity}</td>
-                    <td>{item.energy}</td>
-                    <td>{item.chargeCurrent}</td>
-                    <td>{item.dischargeCurrent}</td>
+                    <td>{item.maxDischargeRate}</td>
+                    <td>{item.cycleLife}</td>
                   </tr>
                 ))}
               </tbody>
@@ -91,8 +101,7 @@ export default function LfpPageEn() {
           </div>
 
           <p className="tech-note">
-            Note: final availability, complete discharge curves, operating temperature, and final dimensions should be
-            confirmed at quotation stage.
+            Shown values are intentionally high-level for first-pass B2B screening; detailed specifications are provided during quotation.
           </p>
         </div>
       </section>
@@ -103,19 +112,19 @@ export default function LfpPageEn() {
             <h3>Typical B2B applications</h3>
             <ul className="list">
               <li>Commercial and industrial ESS</li>
-              <li>Industrial battery packs with long cycle targets</li>
+              <li>Industrial packs with long-cycle targets</li>
               <li>PV-coupled storage systems</li>
-              <li>Stationary systems with strict safety requirements</li>
+              <li>Stationary systems with safety priority</li>
             </ul>
           </div>
 
           <div className="card">
             <h3>Compliance and docs</h3>
             <ul className="list">
-              <li>UN38.3 and SDS/MSDS for transport and handling</li>
+              <li>UN38.3 and SDS/MSDS for transport/handling</li>
               <li>REACH and RoHS for EU material compliance</li>
-              <li>Test reports and quality documents on request</li>
-              <li>Support for pre-order technical-commercial files</li>
+              <li>Test reports and quality docs on request</li>
+              <li>Pre-order technical-commercial dossier support</li>
             </ul>
           </div>
         </div>
@@ -124,7 +133,7 @@ export default function LfpPageEn() {
       <section className="section">
         <div className="container band">
           <h3>LFP requests by specification</h3>
-          <p>We handle requests by voltage, capacity, current profile, and destination documentation package.</p>
+          <p>We support model selection by current profile, cycle target, and destination compliance package.</p>
           <div className="actions">
             <Link href="/en/contact" className="btn-primary">Request quotation</Link>
             <Link href="/en/products" className="btn-secondary">Back to products</Link>

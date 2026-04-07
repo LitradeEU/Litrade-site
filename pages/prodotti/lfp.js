@@ -3,40 +3,52 @@ import Layout from "../../components/Layout";
 
 const lfpVariants = [
   {
-    model: "LFP32140-12500",
-    format: "32140 cilindrica",
+    model: "LFP18650-2000BA",
+    format: "18650 cilindrica",
     nominalVoltage: "3.2 V",
-    capacity: "12,500 mAh",
-    energy: "40.00 Wh",
-    chargeCurrent: "12.5 A (≤1C)",
-    dischargeCurrent: "25 A (≤2C)",
+    capacity: "2,000 mAh",
+    maxDischargeRate: "3C",
+    cycleLife: "≥1500 cicli (0.5C/1C)",
   },
   {
-    model: "LFP32140-15000",
+    model: "LFP32140-15000LA",
     format: "32140 cilindrica",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
-    energy: "48.00 Wh",
-    chargeCurrent: "15 A (≤1C)",
-    dischargeCurrent: "30 A (≤2C)",
+    maxDischargeRate: "3C",
+    cycleLife: "≥1000 cicli (1.2C/2C)",
   },
   {
-    model: "LFP32140-17500",
+    model: "LFP32140-15000LB",
     format: "32140 cilindrica",
     nominalVoltage: "3.2 V",
-    capacity: "17,500 mAh",
-    energy: "56.00 Wh",
-    chargeCurrent: "17.5 A (≤1C)",
-    dischargeCurrent: "35 A (≤2C)",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "2C",
+    cycleLife: "≥500 cicli (1C/2C)",
   },
   {
-    model: "LFP26700-4000",
-    format: "26700 cilindrica",
+    model: "LFP32140-15000LC",
+    format: "32140 cilindrica",
     nominalVoltage: "3.2 V",
-    capacity: "4,000 mAh",
-    energy: "12.80 Wh",
-    chargeCurrent: "4 A (≤1C)",
-    dischargeCurrent: "12 A (≤3C)",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "2C",
+    cycleLife: "≥1000 cicli (0.5C/1.5C)",
+  },
+  {
+    model: "LFP32140-15000LD",
+    format: "32140 cilindrica",
+    nominalVoltage: "3.2 V",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "1.5C",
+    cycleLife: "≥1500 cicli (0.5C/1C)",
+  },
+  {
+    model: "LFP32140-15000LL",
+    format: "32140 cilindrica",
+    nominalVoltage: "3.2 V",
+    capacity: "15,000 mAh",
+    maxDischargeRate: "5C",
+    cycleLife: "≥1000 cicli (2C/3C)",
   },
 ];
 
@@ -46,10 +58,10 @@ export default function LfpPage() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Prodotti · LFP</div>
-          <h1>Celle LFP per massima sicurezza operativa e lunga vita ciclica.</h1>
+          <h1>Celle LFP cilindriche 18650 e 32140 per sicurezza e lunga durata.</h1>
           <p>
-            Chimica consigliata per storage stazionario, applicazioni industriali e sistemi dove stabilità termica
-            e affidabilità nel tempo sono prioritarie.
+            La gamma LFP include varianti standard e high-rate con forte focus su stabilità termica,
+            ciclicità elevata e integrazione in sistemi storage e industriali.
           </p>
         </div>
       </section>
@@ -57,8 +69,8 @@ export default function LfpPage() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Scheda tecnica varianti principali</h2>
-            <p>Dati di riferimento raccolti da linee prodotto industriali qualificate.</p>
+            <h2>Scheda tecnica varianti LFP</h2>
+            <p>Dati allineati al catalogo prodotti ufficiale condiviso.</p>
           </div>
 
           <div className="table-wrap">
@@ -67,11 +79,10 @@ export default function LfpPage() {
                 <tr>
                   <th>Modello</th>
                   <th>Formato</th>
-                  <th>Tensione nominale</th>
-                  <th>Capacità nominale</th>
-                  <th>Energia nominale</th>
-                  <th>Corrente carica max</th>
-                  <th>Corrente scarica max</th>
+                  <th>Tensione</th>
+                  <th>Capacità</th>
+                  <th>Scarica max</th>
+                  <th>Vita ciclica</th>
                 </tr>
               </thead>
               <tbody>
@@ -81,9 +92,8 @@ export default function LfpPage() {
                     <td>{item.format}</td>
                     <td>{item.nominalVoltage}</td>
                     <td>{item.capacity}</td>
-                    <td>{item.energy}</td>
-                    <td>{item.chargeCurrent}</td>
-                    <td>{item.dischargeCurrent}</td>
+                    <td>{item.maxDischargeRate}</td>
+                    <td>{item.cycleLife}</td>
                   </tr>
                 ))}
               </tbody>
@@ -91,8 +101,7 @@ export default function LfpPage() {
           </div>
 
           <p className="tech-note">
-            Nota: disponibilità, curve complete, temperatura operativa e dimensioni finali vanno confermate in offerta
-            in base al lotto e all'applicazione.
+            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta.
           </p>
         </div>
       </section>
@@ -102,10 +111,10 @@ export default function LfpPage() {
           <div className="card">
             <h3>Applicazioni B2B tipiche</h3>
             <ul className="list">
-              <li>Energy storage systems (C&I, backup, peak shaving)</li>
-              <li>Battery packs industriali ad alta vita ciclica</li>
-              <li>Integrazione con impianti fotovoltaici</li>
-              <li>Sistemi stazionari con forte attenzione a sicurezza e stabilità</li>
+              <li>Energy storage systems C&I</li>
+              <li>Battery pack industriali ad alta vita ciclica</li>
+              <li>Sistemi integrati con fotovoltaico</li>
+              <li>Applicazioni stazionarie con priorità sicurezza</li>
             </ul>
           </div>
 
@@ -125,7 +134,7 @@ export default function LfpPage() {
         <div className="container band">
           <h3>Richieste LFP su specifica</h3>
           <p>
-            Gestiamo richieste per voltaggio, capacità, corrente e target documentale con interlocuzione tecnica diretta.
+            Gestiamo richieste per profilo corrente, ciclo vita target e requisiti documentali del mercato di destinazione.
           </p>
           <div className="actions">
             <Link href="/contatti" className="btn-primary">Richiedi quotazione</Link>

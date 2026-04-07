@@ -31,10 +31,10 @@ export default function ProductsEn() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Products</div>
-          <h1>Lithium cells and energy solutions for industrial B2B programs.</h1>
+          <h1>Cylindrical lithium cells and energy solutions for B2B projects.</h1>
           <p>
-            We support chemistry and model selection based on technical fit, documentation requirements, and
-            commercial execution goals.
+            Technical pages are aligned with your current product catalog and include the exact models treated
+            in 18650 and 32140 formats.
           </p>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function ProductsEn() {
             </div>
             <h3>Lithium-ion cells</h3>
             <p>
-              Dedicated technical pages for LFP, NMC, and LMFP with key variants and critical performance metrics.
+              Dedicated pages for LFP, NMC, and LMFP with model list, key technical metrics, and cycle-life data.
             </p>
             <ul className="list">
               <li><Link href="/en/products/lfp">LFP (LiFePO4)</Link></li>
@@ -78,14 +78,14 @@ export default function ProductsEn() {
         <div className="container grid-3">
           <div className="card">
             <div className="card-number">01</div>
-            <h3>Form factor range</h3>
-            <p>Cylindrical families include 18650, 21700, 26700, 32140, 32700, and 33140 by chemistry.</p>
+            <h3>Current form factors</h3>
+            <p>Cylindrical 18650 and 32140 configurations, differentiated by chemistry and discharge profile.</p>
           </div>
 
           <div className="card">
             <div className="card-number">02</div>
             <h3>Documentation package</h3>
-            <p>UN38.3, SDS/MSDS, RoHS, REACH, and additional technical documentation by destination market.</p>
+            <p>UN38.3, SDS/MSDS, RoHS, REACH, and additional technical documents by model and destination market.</p>
           </div>
 
           <div className="card">

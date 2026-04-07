@@ -3,85 +3,60 @@ import Layout from "../../components/Layout";
 
 const nmcVariants = [
   {
-    model: "NCM18650-2000BG",
+    model: "NCM18650-2000BC",
     format: "18650 cilindrica",
-    nominalVoltage: "3.7 V",
+    nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
-    energy: "7.40 Wh",
-    chargeCurrent: "2 A (≤1C)",
-    dischargeCurrent: "6 A (≤3C)",
+    maxDischargeRate: "5C",
+    cycleLife: "≥300 cicli (0.5C/5C)",
   },
   {
-    model: "NCM18650-2000BD",
+    model: "NCM18650-2000BF",
     format: "18650 cilindrica",
-    nominalVoltage: "3.7 V",
+    nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
-    energy: "7.40 Wh",
-    chargeCurrent: "4 A (≤2C)",
-    dischargeCurrent: "20 A (≤10C)",
+    maxDischargeRate: "10C",
+    cycleLife: "≥300 cicli (1C/10C)",
+  },
+  {
+    model: "NCM18650-2000BG",
+    format: "18650 cilindrica",
+    nominalVoltage: "3.6 V",
+    capacity: "2,000 mAh",
+    maxDischargeRate: "3C",
+    cycleLife: "≥400 cicli (0.5C/3C)",
   },
   {
     model: "NCM18650-2500DC",
     format: "18650 cilindrica",
-    nominalVoltage: "3.7 V",
+    nominalVoltage: "3.6 V",
     capacity: "2,500 mAh",
-    energy: "9.25 Wh",
-    chargeCurrent: "4 A (≤1.6C)",
-    dischargeCurrent: "25 A (≤10C)",
+    maxDischargeRate: "10C",
+    cycleLife: "≥300 cicli (1C/10C)",
   },
   {
     model: "NCM18650-2600EA",
     format: "18650 cilindrica",
-    nominalVoltage: "3.7 V",
+    nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
-    energy: "9.62 Wh",
-    chargeCurrent: "2.6 A (≤1C)",
-    dischargeCurrent: "7.8 A (≤3C)",
+    maxDischargeRate: "3C",
+    cycleLife: "≥500 cicli (0.5C/3C)",
   },
   {
-    model: "INR21700-4000",
-    format: "21700 cilindrica",
-    nominalVoltage: "3.7 V",
-    capacity: "4,000 mAh",
-    energy: "14.80 Wh",
-    chargeCurrent: "8 A (≤2C)",
-    dischargeCurrent: "20 A (≤5C)",
+    model: "NCM18650-2600EB",
+    format: "18650 cilindrica",
+    nominalVoltage: "3.6 V",
+    capacity: "2,600 mAh",
+    maxDischargeRate: "3C",
+    cycleLife: "≥400 cicli (0.5C/3C)",
   },
   {
-    model: "INR21700-4500",
-    format: "21700 cilindrica",
-    nominalVoltage: "3.7 V",
-    capacity: "4,500 mAh",
-    energy: "16.65 Wh",
-    chargeCurrent: "Da confermare",
-    dischargeCurrent: "Da confermare",
-  },
-  {
-    model: "INR21700-5000",
-    format: "21700 cilindrica",
-    nominalVoltage: "3.7 V",
-    capacity: "5,000 mAh",
-    energy: "18.50 Wh",
-    chargeCurrent: "5 A (≤1C)",
-    dischargeCurrent: "15 A (≤3C)",
-  },
-  {
-    model: "NCM26700-5000",
-    format: "26700 cilindrica",
-    nominalVoltage: "3.7 V",
-    capacity: "5,000 mAh",
-    energy: "18.50 Wh",
-    chargeCurrent: "5 A (≤1C)",
-    dischargeCurrent: "10 A (≤2C)",
-  },
-  {
-    model: "NCM32140-18000",
-    format: "32140 cilindrica",
-    nominalVoltage: "3.7 V",
-    capacity: "18,000 mAh",
-    energy: "66.60 Wh",
-    chargeCurrent: "18 A (≤1C)",
-    dischargeCurrent: "54 A (≤3C)",
+    model: "NCM18650-2600ED",
+    format: "18650 cilindrica",
+    nominalVoltage: "3.6 V",
+    capacity: "2,600 mAh",
+    maxDischargeRate: "3C",
+    cycleLife: "≥400 cicli (0.5C/3C)",
   },
 ];
 
@@ -91,10 +66,10 @@ export default function NmcPage() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Prodotti · NMC</div>
-          <h1>Celle NMC per alta densità energetica e ingombri contenuti.</h1>
+          <h1>Celle NMC cilindriche 18650 per applicazioni ad alta energia specifica.</h1>
           <p>
-            Tecnologia indicata per sistemi in cui energia specifica, compattezza e performance sono fattori
-            progettuali prioritari.
+            Le varianti NMC a portfolio sono in formato cilindrico 18650 e coprono configurazioni da 2.0 Ah a 2.6 Ah,
+            con opzioni ad alta scarica per applicazioni power-oriented.
           </p>
         </div>
       </section>
@@ -102,8 +77,8 @@ export default function NmcPage() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Scheda tecnica varianti principali</h2>
-            <p>Dati di riferimento raccolti da linee prodotto industriali qualificate.</p>
+            <h2>Scheda tecnica varianti NMC</h2>
+            <p>Dati allineati al catalogo prodotti ufficiale condiviso.</p>
           </div>
 
           <div className="table-wrap">
@@ -112,11 +87,10 @@ export default function NmcPage() {
                 <tr>
                   <th>Modello</th>
                   <th>Formato</th>
-                  <th>Tensione nominale</th>
-                  <th>Capacità nominale</th>
-                  <th>Energia nominale</th>
-                  <th>Corrente carica max</th>
-                  <th>Corrente scarica max</th>
+                  <th>Tensione</th>
+                  <th>Capacità</th>
+                  <th>Scarica max</th>
+                  <th>Vita ciclica</th>
                 </tr>
               </thead>
               <tbody>
@@ -126,9 +100,8 @@ export default function NmcPage() {
                     <td>{item.format}</td>
                     <td>{item.nominalVoltage}</td>
                     <td>{item.capacity}</td>
-                    <td>{item.energy}</td>
-                    <td>{item.chargeCurrent}</td>
-                    <td>{item.dischargeCurrent}</td>
+                    <td>{item.maxDischargeRate}</td>
+                    <td>{item.cycleLife}</td>
                   </tr>
                 ))}
               </tbody>
@@ -136,8 +109,7 @@ export default function NmcPage() {
           </div>
 
           <p className="tech-note">
-            Nota: per selezione finale vanno verificati anche curva di scarica, resistenza interna, temperatura e vincoli
-            del battery management system previsto.
+            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta.
           </p>
         </div>
       </section>
@@ -147,10 +119,10 @@ export default function NmcPage() {
           <div className="card">
             <h3>Applicazioni B2B tipiche</h3>
             <ul className="list">
-              <li>Battery packs ad alta densità energetica</li>
-              <li>Micromobilità e sistemi compatti</li>
-              <li>Progetti con vincoli di volume e peso</li>
-              <li>Soluzioni ad elevata energia specifica</li>
+              <li>Battery pack ad alta densità energetica</li>
+              <li>E-mobility leggera e power tools</li>
+              <li>Applicazioni con vincoli su peso/volume</li>
+              <li>Sistemi che richiedono versioni high-rate</li>
             </ul>
           </div>
 
@@ -159,8 +131,8 @@ export default function NmcPage() {
             <ul className="list">
               <li>UN38.3, SDS/MSDS e documentazione trasporto</li>
               <li>RoHS e REACH per mercato UE</li>
-              <li>Schede tecniche e report materici su richiesta</li>
-              <li>Supporto a qualifica tecnica in fase pre-acquisto</li>
+              <li>Schede tecniche e report su richiesta</li>
+              <li>Supporto a qualifica tecnica pre-acquisto</li>
             </ul>
           </div>
         </div>
@@ -170,7 +142,7 @@ export default function NmcPage() {
         <div className="container band">
           <h3>Richieste NMC su progetto</h3>
           <p>
-            Possiamo filtrare rapidamente i modelli in base a energia target, correnti richieste e profilo documentale.
+            Possiamo selezionare il modello più adatto in base a corrente richiesta, vita ciclica target e condizioni di utilizzo.
           </p>
           <div className="actions">
             <Link href="/contatti" className="btn-primary">Richiedi quotazione</Link>
