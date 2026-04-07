@@ -1,29 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
-
-function ProductVisual({ type = "cell" }) {
-  if (type === "storage") {
-    return (
-      <svg viewBox="0 0 320 180" fill="none" aria-hidden="true">
-        <rect x="32" y="42" width="256" height="96" rx="20" fill="rgba(58,109,240,0.12)" stroke="rgba(111,149,255,0.24)" />
-        <rect x="58" y="68" width="86" height="14" rx="7" fill="rgba(111,149,255,0.75)" />
-        <rect x="58" y="94" width="54" height="10" rx="5" fill="rgba(255,255,255,0.55)" />
-        <rect x="232" y="68" width="22" height="44" rx="6" fill="rgba(111,149,255,0.65)" />
-        <rect x="264" y="68" width="10" height="44" rx="5" fill="rgba(255,255,255,0.2)" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 320 180" fill="none" aria-hidden="true">
-      <rect x="70" y="60" width="180" height="54" rx="27" fill="rgba(58,109,240,0.16)" stroke="rgba(111,149,255,0.26)" />
-      <circle cx="92" cy="87" r="16" fill="rgba(255,255,255,0.08)" />
-      <rect x="118" y="80" width="92" height="8" rx="4" fill="rgba(111,149,255,0.72)" />
-      <rect x="118" y="94" width="58" height="6" rx="3" fill="rgba(255,255,255,0.38)" />
-      <rect x="226" y="74" width="10" height="26" rx="5" fill="rgba(255,255,255,0.22)" />
-    </svg>
-  );
-}
+import { ProductVisual } from "../components/ProductVisuals";
 
 export default function Prodotti() {
   return (
