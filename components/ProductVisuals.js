@@ -6,37 +6,27 @@ export function ProductVisual({ type = "cell" }) {
 
   if (type === "storage") {
     const frameId = `storageFrame-${id}`;
+    const strokeId = `storageStroke-${id}`;
     const glowId = `storageGlow-${id}`;
-    const panelId = `modulePanel-${id}`;
-    const accentId = `moduleAccent-${id}`;
-    const terminalId = `terminalAccent-${id}`;
     const neonId = `storageNeon-${id}`;
 
     return (
       <svg viewBox="0 0 320 180" fill="none" aria-hidden="true" role="img">
         <defs>
-          <linearGradient id={frameId} x1="32" y1="26" x2="288" y2="154" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#6F95FF" stopOpacity="0.26" />
-            <stop offset="1" stopColor="#D04DFF" stopOpacity="0.18" />
+          <linearGradient id={frameId} x1="30" y1="28" x2="290" y2="152" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#72A2FF" stopOpacity="0.24" />
+            <stop offset="1" stopColor="#D34CFF" stopOpacity="0.2" />
           </linearGradient>
-          <linearGradient id={glowId} x1="160" y1="34" x2="160" y2="146" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#7CA1FF" stopOpacity="0.2" />
-            <stop offset="1" stopColor="#FF5CCF" stopOpacity="0.12" />
+          <linearGradient id={strokeId} x1="96" y1="62" x2="230" y2="122" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#7DAAFF" />
+            <stop offset="1" stopColor="#EB63FF" />
           </linearGradient>
-          <linearGradient id={panelId} x1="66" y1="48" x2="254" y2="130" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#2A406D" stopOpacity="0.95" />
-            <stop offset="1" stopColor="#1C2E52" stopOpacity="0.95" />
-          </linearGradient>
-          <linearGradient id={accentId} x1="76" y1="96" x2="194" y2="96" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#86AAFF" />
-            <stop offset="1" stopColor="#B075FF" />
-          </linearGradient>
-          <linearGradient id={terminalId} x1="214" y1="74" x2="252" y2="112" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#79A8FF" />
-            <stop offset="1" stopColor="#F05FFF" />
+          <radialGradient id={glowId} cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 96) rotate(90) scale(72 126)">
+            <stop stopColor="#7EAFFF" stopOpacity="0.2" />
+            <stop offset="1" stopColor="#D857FF" stopOpacity="0.05" />
           </linearGradient>
           <filter id={neonId} x="0" y="0" width="320" height="180" filterUnits="userSpaceOnUse">
-            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feGaussianBlur stdDeviation="5.5" result="blur" />
             <feMerge>
               <feMergeNode in="blur" />
               <feMergeNode in="SourceGraphic" />
@@ -44,44 +34,48 @@ export function ProductVisual({ type = "cell" }) {
           </filter>
         </defs>
 
-        <rect x="32" y="26" width="256" height="128" rx="26" fill={`url(#${glowId})`} stroke={`url(#${frameId})`} />
-        <rect x="66" y="48" width="188" height="84" rx="22" fill={`url(#${panelId})`} stroke="rgba(127, 163, 255, 0.32)" />
+        <rect x="30" y="28" width="260" height="124" rx="24" fill={`url(#${glowId})`} stroke={`url(#${frameId})`} />
 
         <g filter={`url(#${neonId})`}>
-          <rect x="84" y="74" width="102" height="16" rx="8" fill={`url(#${accentId})`} />
-          <rect x="84" y="100" width="62" height="10" rx="5" fill="rgba(226, 236, 255, 0.7)" />
-          <rect x="214" y="74" width="28" height="38" rx="7" fill={`url(#${terminalId})`} />
+          <path d="M88 118L226 118L242 66L104 66L88 118Z" stroke={`url(#${strokeId})`} strokeWidth="2.8" />
+          <path d="M108 66L92 118" stroke="rgba(130, 177, 255, 0.75)" strokeWidth="1.5" />
+          <path d="M136 66L120 118" stroke="rgba(130, 177, 255, 0.75)" strokeWidth="1.5" />
+          <path d="M164 66L148 118" stroke="rgba(130, 177, 255, 0.75)" strokeWidth="1.5" />
+          <path d="M192 66L176 118" stroke="rgba(130, 177, 255, 0.75)" strokeWidth="1.5" />
+          <path d="M220 66L204 118" stroke="rgba(130, 177, 255, 0.75)" strokeWidth="1.5" />
+          <path d="M99 84H237" stroke="rgba(214, 163, 255, 0.6)" strokeWidth="1.5" />
+          <path d="M94 101H232" stroke="rgba(214, 163, 255, 0.6)" strokeWidth="1.5" />
         </g>
 
-        <rect x="260" y="74" width="9" height="38" rx="4.5" fill="rgba(212, 224, 255, 0.28)" />
-        <circle cx="61" cy="61" r="2.5" fill="rgba(162, 193, 255, 0.55)" />
-        <circle cx="259" cy="61" r="2.5" fill="rgba(225, 130, 255, 0.55)" />
+        <path d="M158 118L145 136" stroke="rgba(153, 192, 255, 0.68)" strokeWidth="2.2" strokeLinecap="round" />
+        <path d="M170 118L183 136" stroke="rgba(211, 131, 255, 0.68)" strokeWidth="2.2" strokeLinecap="round" />
+        <path d="M136 136H192" stroke="rgba(226, 237, 255, 0.5)" strokeWidth="2.2" strokeLinecap="round" />
       </svg>
     );
   }
 
   const frameId = `cellFrame-${id}`;
-  const bodyId = `cellBody-${id}`;
-  const coreId = `cellCore-${id}`;
+  const strokeId = `cellStroke-${id}`;
+  const glowId = `cellGlow-${id}`;
   const neonId = `cellNeon-${id}`;
 
   return (
     <svg viewBox="0 0 320 180" fill="none" aria-hidden="true" role="img">
       <defs>
-        <linearGradient id={frameId} x1="44" y1="30" x2="276" y2="150" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#74A2FF" stopOpacity="0.28" />
-          <stop offset="1" stopColor="#D94CFF" stopOpacity="0.16" />
+        <linearGradient id={frameId} x1="44" y1="28" x2="276" y2="152" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#73A6FF" stopOpacity="0.24" />
+          <stop offset="1" stopColor="#D84BFF" stopOpacity="0.18" />
         </linearGradient>
-        <linearGradient id={bodyId} x1="78" y1="62" x2="242" y2="116" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#213968" />
-          <stop offset="1" stopColor="#1A2F56" />
+        <linearGradient id={strokeId} x1="142" y1="34" x2="178" y2="148" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#7BADFF" />
+          <stop offset="1" stopColor="#E25DFF" />
         </linearGradient>
-        <linearGradient id={coreId} x1="116" y1="86" x2="210" y2="86" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#7CA6FF" />
-          <stop offset="1" stopColor="#B26FFF" />
+        <radialGradient id={glowId} cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 90) rotate(90) scale(72 56)">
+          <stop stopColor="#7EAFFF" stopOpacity="0.2" />
+          <stop offset="1" stopColor="#D857FF" stopOpacity="0.04" />
         </linearGradient>
         <filter id={neonId} x="0" y="0" width="320" height="180" filterUnits="userSpaceOnUse">
-          <feGaussianBlur stdDeviation="7" result="blur" />
+          <feGaussianBlur stdDeviation="5.5" result="blur" />
           <feMerge>
             <feMergeNode in="blur" />
             <feMergeNode in="SourceGraphic" />
@@ -89,18 +83,15 @@ export function ProductVisual({ type = "cell" }) {
         </filter>
       </defs>
 
-      <rect x="44" y="30" width="232" height="120" rx="24" fill="rgba(34, 54, 88, 0.5)" stroke={`url(#${frameId})`} />
-      <rect x="74" y="61" width="172" height="58" rx="29" fill={`url(#${bodyId})`} stroke="rgba(120, 160, 255, 0.32)" />
-      <circle cx="92" cy="90" r="15.5" fill="rgba(215, 228, 255, 0.12)" stroke="rgba(145, 177, 255, 0.35)" />
-
       <g filter={`url(#${neonId})`}>
-        <rect x="116" y="82" width="94" height="9" rx="4.5" fill={`url(#${coreId})`} />
-        <rect x="116" y="97" width="58" height="6" rx="3" fill="rgba(230, 238, 255, 0.68)" />
+        <rect x="44" y="28" width="232" height="124" rx="24" fill={`url(#${glowId})`} stroke={`url(#${frameId})`} />
+        <rect x="138" y="42" width="44" height="100" rx="22" stroke={`url(#${strokeId})`} strokeWidth="3" />
+        <ellipse cx="160" cy="42" rx="22" ry="7" stroke="rgba(213, 234, 255, 0.9)" strokeWidth="2.2" />
+        <ellipse cx="160" cy="42" rx="12" ry="3.5" stroke="rgba(138, 177, 255, 0.75)" strokeWidth="1.4" />
+        <path d="M146 68V120" stroke="rgba(124, 175, 255, 0.62)" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M160 62V120" stroke="rgba(124, 175, 255, 0.62)" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M174 68V120" stroke="rgba(227, 129, 255, 0.52)" strokeWidth="1.5" strokeLinecap="round" />
       </g>
-
-      <rect x="225" y="74" width="12" height="32" rx="6" fill="rgba(228, 237, 255, 0.28)" />
-      <circle cx="61" cy="61" r="2.5" fill="rgba(156, 189, 255, 0.54)" />
-      <circle cx="259" cy="61" r="2.5" fill="rgba(225, 124, 255, 0.54)" />
     </svg>
   );
 }
