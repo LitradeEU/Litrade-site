@@ -16,7 +16,7 @@ export function ProductVisual({ type = "cell" }) {
           <linearGradient id={frameId} x1="30" y1="28" x2="290" y2="152" gradientUnits="userSpaceOnUse">
             <stop stopColor="#72A2FF" stopOpacity="0.24" />
             <stop offset="1" stopColor="#D34CFF" stopOpacity="0.2" />
-          </linearGradient>
+          </radialGradient>
           <linearGradient id={strokeId} x1="96" y1="62" x2="230" y2="122" gradientUnits="userSpaceOnUse">
             <stop stopColor="#7DAAFF" />
             <stop offset="1" stopColor="#EB63FF" />
@@ -65,7 +65,7 @@ export function ProductVisual({ type = "cell" }) {
         <linearGradient id={frameId} x1="44" y1="28" x2="276" y2="152" gradientUnits="userSpaceOnUse">
           <stop stopColor="#73A6FF" stopOpacity="0.24" />
           <stop offset="1" stopColor="#D84BFF" stopOpacity="0.18" />
-        </linearGradient>
+        </radialGradient>
         <linearGradient id={strokeId} x1="142" y1="34" x2="178" y2="148" gradientUnits="userSpaceOnUse">
           <stop stopColor="#7BADFF" />
           <stop offset="1" stopColor="#E25DFF" />
