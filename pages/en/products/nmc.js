@@ -8,7 +8,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "5C",
-    cycleLife: ">=300 cycles (0.5C/5C, residual capacity >=80%)",
+    cycleLife: "≥300 cycles (0.5C/5C, residual capacity ≥80%)",
   },
   {
     model: "NMC-18650-2.0Ah-Power10C",
@@ -16,7 +16,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "10C",
-    cycleLife: ">=300 cycles (1C/10C, residual capacity >=80%)",
+    cycleLife: "≥300 cycles (1C/10C, residual capacity ≥80%)",
   },
   {
     model: "NMC-18650-2.0Ah-Energy3C",
@@ -24,7 +24,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: ">=400 cycles (0.5C/3C, residual capacity >=80%)",
+    cycleLife: "≥400 cycles (0.5C/3C, residual capacity ≥80%)",
   },
   {
     model: "NMC-18650-2.5Ah-Power10C",
@@ -32,7 +32,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,500 mAh",
     maxDischargeRate: "10C",
-    cycleLife: ">=300 cycles (1C/10C, residual capacity >=80%)",
+    cycleLife: "≥300 cycles (1C/10C, residual capacity ≥80%)",
   },
   {
     model: "NMC-18650-2.6Ah-LongLife3C-A",
@@ -40,7 +40,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
     maxDischargeRate: "3C",
-    cycleLife: ">=500 cycles (0.5C/3C, residual capacity >=80%)",
+    cycleLife: "≥500 cycles (0.5C/3C, residual capacity ≥80%)",
   },
   {
     model: "NMC-18650-2.6Ah-LongLife3C-B",
@@ -48,7 +48,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
     maxDischargeRate: "3C",
-    cycleLife: ">=400 cycles (0.5C/3C, residual capacity >=80%)",
+    cycleLife: "≥400 cycles (0.5C/3C, residual capacity ≥80%)",
   },
   {
     model: "NMC-18650-2.6Ah-LongLife3C-C",
@@ -56,7 +56,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
     maxDischargeRate: "3C",
-    cycleLife: ">=400 cycles (0.5C/3C, residual capacity >=80%)",
+    cycleLife: "≥400 cycles (0.5C/3C, residual capacity ≥80%)",
   },
 ];
 
@@ -108,7 +108,7 @@ export default function NmcPageEn() {
             </table>
           </div>
 
-          <p className="tech-note">Shown values are intentionally high-level for first-pass B2B screening; detailed specifications are provided during quotation. In the brochure, cycle life is stated with test conditions (e.g. 0.5C/1C) and refers to residual capacity >=80% of the initial capacity.</p>
+          <p className="tech-note">Shown values are intentionally high-level for first-pass B2B screening; detailed specifications are provided during quotation. In the brochure, cycle life is stated with test conditions (e.g. 0.5C/1C) and refers to residual capacity at least 80% of the initial capacity.</p>
         </div>
       </section>
 
