@@ -16,11 +16,11 @@ export function ProductVisual({ type = "cell" }) {
           <linearGradient id={frameId} x1="30" y1="28" x2="290" y2="152" gradientUnits="userSpaceOnUse">
             <stop stopColor="#72A2FF" stopOpacity="0.24" />
             <stop offset="1" stopColor="#D34CFF" stopOpacity="0.2" />
-          </radialGradient>
+          </linearGradient>
           <linearGradient id={strokeId} x1="96" y1="62" x2="230" y2="122" gradientUnits="userSpaceOnUse">
             <stop stopColor="#7DAAFF" />
             <stop offset="1" stopColor="#EB63FF" />
-          </linearGradient>
+          </radialGradient>
           <radialGradient id={glowId} cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 96) rotate(90) scale(72 126)">
             <stop stopColor="#7EAFFF" stopOpacity="0.2" />
             <stop offset="1" stopColor="#D857FF" stopOpacity="0.05" />
@@ -65,11 +65,11 @@ export function ProductVisual({ type = "cell" }) {
         <linearGradient id={frameId} x1="44" y1="28" x2="276" y2="152" gradientUnits="userSpaceOnUse">
           <stop stopColor="#73A6FF" stopOpacity="0.24" />
           <stop offset="1" stopColor="#D84BFF" stopOpacity="0.18" />
-        </radialGradient>
+        </linearGradient>
         <linearGradient id={strokeId} x1="142" y1="34" x2="178" y2="148" gradientUnits="userSpaceOnUse">
           <stop stopColor="#7BADFF" />
           <stop offset="1" stopColor="#E25DFF" />
-        </linearGradient>
+        </radialGradient>
         <radialGradient id={glowId} cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 90) rotate(90) scale(72 56)">
           <stop stopColor="#7EAFFF" stopOpacity="0.2" />
           <stop offset="1" stopColor="#D857FF" stopOpacity="0.04" />
