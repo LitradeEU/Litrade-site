@@ -8,7 +8,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: ">=1500 cycles (0.5C/1C)",
+    cycleLife: ">=1500 cycles (0.5C/1C, residual capacity >=80%)",
   },
   {
     model: "LFP32140-15000LA",
@@ -16,7 +16,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: ">=1000 cycles (1.2C/2C)",
+    cycleLife: ">=1000 cycles (1.2C/2C, residual capacity >=80%)",
   },
   {
     model: "LFP32140-15000LB",
@@ -24,7 +24,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "2C",
-    cycleLife: ">=500 cycles (1C/2C)",
+    cycleLife: ">=500 cycles (1C/2C, residual capacity >=80%)",
   },
   {
     model: "LFP32140-15000LC",
@@ -32,7 +32,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "2C",
-    cycleLife: ">=1000 cycles (0.5C/1.5C)",
+    cycleLife: ">=1000 cycles (0.5C/1.5C, residual capacity >=80%)",
   },
   {
     model: "LFP32140-15000LD",
@@ -40,7 +40,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "1.5C",
-    cycleLife: ">=1500 cycles (0.5C/1C)",
+    cycleLife: ">=1500 cycles (0.5C/1C, residual capacity >=80%)",
   },
   {
     model: "LFP32140-15000LL",
@@ -48,7 +48,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "5C",
-    cycleLife: ">=1000 cycles (2C/3C)",
+    cycleLife: ">=1000 cycles (2C/3C, residual capacity >=80%)",
   },
 ];
 
@@ -101,7 +101,7 @@ export default function LfpPageEn() {
           </div>
 
           <p className="tech-note">
-            Shown values are intentionally high-level for first-pass B2B screening; detailed specifications are provided during quotation.
+            Shown values are intentionally high-level for first-pass B2B screening; detailed specifications are provided during quotation. In the brochure, cycle life is stated with test conditions (e.g. 0.5C/1C) and refers to residual capacity >=80% of the initial capacity.
           </p>
         </div>
       </section>

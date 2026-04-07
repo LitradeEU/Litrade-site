@@ -8,7 +8,7 @@ const lmfpVariants = [
     nominalVoltage: "3.7 V",
     capacity: "12,500 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥1500 cicli (0.5C/1C)",
+    cycleLife: "≥1500 cicli (0.5C/1C, capacità residua ≥80%)",
   },
   {
     model: "LMFP32140-15000NA",
@@ -16,7 +16,7 @@ const lmfpVariants = [
     nominalVoltage: "3.7 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥1500 cicli (0.5C/1C)",
+    cycleLife: "≥1500 cicli (0.5C/1C, capacità residua ≥80%)",
   },
   {
     model: "LMFP32140-15000NB",
@@ -24,7 +24,7 @@ const lmfpVariants = [
     nominalVoltage: "3.7 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥1000 cicli (0.5C/1C)",
+    cycleLife: "≥1000 cicli (0.5C/1C, capacità residua ≥80%)",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function LmfpPage() {
           </div>
 
           <p className="tech-note">
-            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta.
+            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta. Nel catalogo la vita ciclica è espressa con condizioni di test (es. 0.5C/1C) e fa riferimento a capacità residua ≥80% della capacità iniziale.
           </p>
         </div>
       </section>

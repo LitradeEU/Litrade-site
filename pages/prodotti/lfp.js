@@ -8,7 +8,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥1500 cicli (0.5C/1C)",
+    cycleLife: "≥1500 cicli (0.5C/1C, capacità residua ≥80%)",
   },
   {
     model: "LFP32140-15000LA",
@@ -16,7 +16,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥1000 cicli (1.2C/2C)",
+    cycleLife: "≥1000 cicli (1.2C/2C, capacità residua ≥80%)",
   },
   {
     model: "LFP32140-15000LB",
@@ -24,7 +24,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "2C",
-    cycleLife: "≥500 cicli (1C/2C)",
+    cycleLife: "≥500 cicli (1C/2C, capacità residua ≥80%)",
   },
   {
     model: "LFP32140-15000LC",
@@ -32,7 +32,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "2C",
-    cycleLife: "≥1000 cicli (0.5C/1.5C)",
+    cycleLife: "≥1000 cicli (0.5C/1.5C, capacità residua ≥80%)",
   },
   {
     model: "LFP32140-15000LD",
@@ -40,7 +40,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "1.5C",
-    cycleLife: "≥1500 cicli (0.5C/1C)",
+    cycleLife: "≥1500 cicli (0.5C/1C, capacità residua ≥80%)",
   },
   {
     model: "LFP32140-15000LL",
@@ -48,7 +48,7 @@ const lfpVariants = [
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
     maxDischargeRate: "5C",
-    cycleLife: "≥1000 cicli (2C/3C)",
+    cycleLife: "≥1000 cicli (2C/3C, capacità residua ≥80%)",
   },
 ];
 
@@ -101,7 +101,7 @@ export default function LfpPage() {
           </div>
 
           <p className="tech-note">
-            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta.
+            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta. Nel catalogo la vita ciclica è espressa con condizioni di test (es. 0.5C/1C) e fa riferimento a capacità residua ≥80% della capacità iniziale.
           </p>
         </div>
       </section>

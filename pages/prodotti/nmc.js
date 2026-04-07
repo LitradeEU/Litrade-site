@@ -8,7 +8,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "5C",
-    cycleLife: "≥300 cicli (0.5C/5C)",
+    cycleLife: "≥300 cicli (0.5C/5C, capacità residua ≥80%)",
   },
   {
     model: "NCM18650-2000BF",
@@ -16,7 +16,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "10C",
-    cycleLife: "≥300 cicli (1C/10C)",
+    cycleLife: "≥300 cicli (1C/10C, capacità residua ≥80%)",
   },
   {
     model: "NCM18650-2000BG",
@@ -24,7 +24,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥400 cicli (0.5C/3C)",
+    cycleLife: "≥400 cicli (0.5C/3C, capacità residua ≥80%)",
   },
   {
     model: "NCM18650-2500DC",
@@ -32,7 +32,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,500 mAh",
     maxDischargeRate: "10C",
-    cycleLife: "≥300 cicli (1C/10C)",
+    cycleLife: "≥300 cicli (1C/10C, capacità residua ≥80%)",
   },
   {
     model: "NCM18650-2600EA",
@@ -40,7 +40,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥500 cicli (0.5C/3C)",
+    cycleLife: "≥500 cicli (0.5C/3C, capacità residua ≥80%)",
   },
   {
     model: "NCM18650-2600EB",
@@ -48,7 +48,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥400 cicli (0.5C/3C)",
+    cycleLife: "≥400 cicli (0.5C/3C, capacità residua ≥80%)",
   },
   {
     model: "NCM18650-2600ED",
@@ -56,7 +56,7 @@ const nmcVariants = [
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
     maxDischargeRate: "3C",
-    cycleLife: "≥400 cicli (0.5C/3C)",
+    cycleLife: "≥400 cicli (0.5C/3C, capacità residua ≥80%)",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function NmcPage() {
           </div>
 
           <p className="tech-note">
-            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta.
+            Nota: i dati mostrati sono volutamente sintetici per una prima valutazione B2B; i dettagli completi sono condivisi in fase di proposta. Nel catalogo la vita ciclica è espressa con condizioni di test (es. 0.5C/1C) e fa riferimento a capacità residua ≥80% della capacità iniziale.
           </p>
         </div>
       </section>
