@@ -431,6 +431,7 @@ a {
   .container {
     width: min(var(--max), calc(100% - 28px));
   }
+}
 
   .header-inner {
     min-height: auto;
