@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 
 const nmcVariants = [
   {
-    model: "NCM18650-2000BC",
+    model: "NMC-18650-2.0Ah-Power5C",
     format: "18650 cilindrica",
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
@@ -11,7 +11,7 @@ const nmcVariants = [
     cycleLife: "≥300 cicli (0.5C/5C, capacità residua ≥80%)",
   },
   {
-    model: "NCM18650-2000BF",
+    model: "NMC-18650-2.0Ah-Power10C",
     format: "18650 cilindrica",
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
@@ -19,7 +19,7 @@ const nmcVariants = [
     cycleLife: "≥300 cicli (1C/10C, capacità residua ≥80%)",
   },
   {
-    model: "NCM18650-2000BG",
+    model: "NMC-18650-2.0Ah-Energy3C",
     format: "18650 cilindrica",
     nominalVoltage: "3.6 V",
     capacity: "2,000 mAh",
@@ -27,7 +27,7 @@ const nmcVariants = [
     cycleLife: "≥400 cicli (0.5C/3C, capacità residua ≥80%)",
   },
   {
-    model: "NCM18650-2500DC",
+    model: "NMC-18650-2.5Ah-Power10C",
     format: "18650 cilindrica",
     nominalVoltage: "3.6 V",
     capacity: "2,500 mAh",
@@ -35,7 +35,7 @@ const nmcVariants = [
     cycleLife: "≥300 cicli (1C/10C, capacità residua ≥80%)",
   },
   {
-    model: "NCM18650-2600EA",
+    model: "NMC-18650-2.6Ah-LongLife3C-A",
     format: "18650 cilindrica",
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
@@ -43,7 +43,7 @@ const nmcVariants = [
     cycleLife: "≥500 cicli (0.5C/3C, capacità residua ≥80%)",
   },
   {
-    model: "NCM18650-2600EB",
+    model: "NMC-18650-2.6Ah-LongLife3C-B",
     format: "18650 cilindrica",
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",
@@ -51,7 +51,7 @@ const nmcVariants = [
     cycleLife: "≥400 cicli (0.5C/3C, capacità residua ≥80%)",
   },
   {
-    model: "NCM18650-2600ED",
+    model: "NMC-18650-2.6Ah-LongLife3C-C",
     format: "18650 cilindrica",
     nominalVoltage: "3.6 V",
     capacity: "2,600 mAh",

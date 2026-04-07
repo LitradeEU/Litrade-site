@@ -3,7 +3,7 @@ import LayoutEn from "../../../components/LayoutEn";
 
 const lfpVariants = [
   {
-    model: "LFP18650-2000BA",
+    model: "LFP-18650-2.0Ah-3C",
     format: "18650 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "2,000 mAh",
@@ -11,7 +11,7 @@ const lfpVariants = [
     cycleLife: ">=1500 cycles (0.5C/1C, residual capacity >=80%)",
   },
   {
-    model: "LFP32140-15000LA",
+    model: "LFP-32140-15Ah-3C-A",
     format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
@@ -19,7 +19,7 @@ const lfpVariants = [
     cycleLife: ">=1000 cycles (1.2C/2C, residual capacity >=80%)",
   },
   {
-    model: "LFP32140-15000LB",
+    model: "LFP-32140-15Ah-2C-B",
     format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
@@ -27,7 +27,7 @@ const lfpVariants = [
     cycleLife: ">=500 cycles (1C/2C, residual capacity >=80%)",
   },
   {
-    model: "LFP32140-15000LC",
+    model: "LFP-32140-15Ah-2C-C",
     format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
@@ -35,7 +35,7 @@ const lfpVariants = [
     cycleLife: ">=1000 cycles (0.5C/1.5C, residual capacity >=80%)",
   },
   {
-    model: "LFP32140-15000LD",
+    model: "LFP-32140-15Ah-1.5C-D",
     format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",
@@ -43,7 +43,7 @@ const lfpVariants = [
     cycleLife: ">=1500 cycles (0.5C/1C, residual capacity >=80%)",
   },
   {
-    model: "LFP32140-15000LL",
+    model: "LFP-32140-15Ah-HR5C",
     format: "32140 cylindrical",
     nominalVoltage: "3.2 V",
     capacity: "15,000 mAh",

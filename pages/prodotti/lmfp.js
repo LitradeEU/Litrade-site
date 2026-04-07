@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 
 const lmfpVariants = [
   {
-    model: "LMFP32140-12500MA",
+    model: "LMFP-32140-12.5Ah-3C-A",
     format: "32140 cilindrica",
     nominalVoltage: "3.7 V",
     capacity: "12,500 mAh",
@@ -11,7 +11,7 @@ const lmfpVariants = [
     cycleLife: "≥1500 cicli (0.5C/1C, capacità residua ≥80%)",
   },
   {
-    model: "LMFP32140-15000NA",
+    model: "LMFP-32140-15Ah-3C-A",
     format: "32140 cilindrica",
     nominalVoltage: "3.7 V",
     capacity: "15,000 mAh",
@@ -19,7 +19,7 @@ const lmfpVariants = [
     cycleLife: "≥1500 cicli (0.5C/1C, capacità residua ≥80%)",
   },
   {
-    model: "LMFP32140-15000NB",
+    model: "LMFP-32140-15Ah-3C-B",
     format: "32140 cilindrica",
     nominalVoltage: "3.7 V",
     capacity: "15,000 mAh",
